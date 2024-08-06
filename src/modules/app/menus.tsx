@@ -1,31 +1,46 @@
 import {
-    contentdashboard1Url,
-    contentdashboard2Url,
-    dashboardUrl,
     homeUrl,
+    hooksReactUrl,
+    introduceNodejsUrl,
+    introduceReactUrl,
+    nodejsUrl,
+    reactUrl,
 } from "@/routes/urls";
-import { AppstoreOutlined, HomeFilled, SmileFilled } from "@ant-design/icons";
+import {
+    IconBrandNodejs,
+    IconBrandReact,
+    IconHomeFilled,
+} from "@tabler/icons-react";
 
 export const defaultMenus = [
     {
         path: homeUrl,
         name: "Home",
-        icon: <HomeFilled />,
+        icon: <IconHomeFilled size={17} />,
     },
     {
-        path: dashboardUrl,
-        name: "Dash board",
-        icon: <AppstoreOutlined />,
+        path: reactUrl,
+        name: "React",
+        icon: <IconBrandReact size={17} />,
         routes: [
             {
-                path: contentdashboard1Url,
-                name: "Content dashboard 1",
-                icon: <SmileFilled />,
+                path: introduceReactUrl,
+                name: "Introduce React",
             },
             {
-                path: contentdashboard2Url,
-                name: "Content dashboard 2",
-                icon: <SmileFilled />,
+                path: hooksReactUrl,
+                name: "Hooks React",
+            },
+        ],
+    },
+    {
+        path: nodejsUrl,
+        name: "NodeJS",
+        icon: <IconBrandNodejs size={17} />,
+        routes: [
+            {
+                path: introduceNodejsUrl,
+                name: "Introduce NodeJS",
             },
         ],
     },

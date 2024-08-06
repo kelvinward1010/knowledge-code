@@ -74,7 +74,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
             className={styles.containerLayout}
             logo={Logo}
             {...props}
-            title="Kaito Kid"
+            title="Knowledge"
             layout={"mix"}
             menuItemRender={(menuItemProps, defaultDom) => {
                 if (

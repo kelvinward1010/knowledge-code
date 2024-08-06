@@ -1,13 +1,20 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
-    contentdashboard1Url,
-    contentdashboard2Url,
     homeUrl,
+    hooksReactUrl,
+    introduceNodejsUrl,
+    introduceReactUrl,
     layoutUrl,
     signinUrl,
 } from "./urls";
 import { ErrorBoundaryPage } from "@/components/error/boundary-error";
-import { DashBoard1, DashBoard2, Home, Layout } from "@/modules";
+import {
+    Home,
+    HooksReact,
+    IntroduceNodejs,
+    IntroduceReact,
+    Layout,
+} from "@/modules";
 
 interface RouteProps {
     children: React.ReactNode;
@@ -35,12 +42,16 @@ export const routerConfig = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: contentdashboard1Url,
-                element: <DashBoard1 />,
+                path: introduceReactUrl,
+                element: <IntroduceReact />,
             },
             {
-                path: contentdashboard2Url,
-                element: <DashBoard2 />,
+                path: hooksReactUrl,
+                element: <HooksReact />,
+            },
+            {
+                path: introduceNodejsUrl,
+                element: <IntroduceNodejs />,
             },
         ],
     },

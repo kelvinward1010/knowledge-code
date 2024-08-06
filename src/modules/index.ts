@@ -10,12 +10,17 @@ export const Home = lazyLoad(
     (module) => module.Home,
 );
 
-export const DashBoard1 = lazyLoad(
-    () => import("./dashboard/views/DashBoard1"),
-    (module) => module.DashBoard1,
+export const IntroduceReact = lazyLoad(
+    () => import("./react/views/IntroduceReact"),
+    (module) => module.IntroduceReact,
 );
 
-export const DashBoard2 = lazyLoad(
-    () => import("./dashboard/views/DashBoard2"),
-    (module) => module.DashBoard2,
+export const HooksReact = lazyLoad(
+    () => import("./react/views/HooksReact"),
+    (module) => module.HooksReact,
+);
+
+export const IntroduceNodejs = lazyLoad(
+    () => import("./nodejs/views/IntroduceNodejs"),
+    (module) => module.IntroduceNodejs,
 );
