@@ -1,6 +1,8 @@
 import {
     homeUrl,
     hooksReactUrl,
+    interviewsReactUrl,
+    interviewsUrl,
     introduceNodejsUrl,
     introduceReactUrl,
     nodejsUrl,
@@ -9,6 +11,7 @@ import {
 import {
     IconBrandNodejs,
     IconBrandReact,
+    IconGenderIntergender,
     IconHomeFilled,
 } from "@tabler/icons-react";
 
@@ -17,6 +20,17 @@ export const defaultMenus = [
         path: homeUrl,
         name: "Home",
         icon: <IconHomeFilled size={17} />,
+    },
+    {
+        path: interviewsUrl,
+        name: "Interviews",
+        icon: <IconGenderIntergender size={17} />,
+        routes: [
+            {
+                path: interviewsReactUrl,
+                name: "React",
+            },
+        ],
     },
     {
         path: reactUrl,

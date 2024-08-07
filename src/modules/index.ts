@@ -10,6 +10,11 @@ export const Home = lazyLoad(
     (module) => module.Home,
 );
 
+export const InterviewReact = lazyLoad(
+    () => import("./interviews/views/InterviewReact"),
+    (module) => module.InterviewReact,
+);
+
 export const IntroduceReact = lazyLoad(
     () => import("./react/views/IntroduceReact"),
     (module) => module.IntroduceReact,
