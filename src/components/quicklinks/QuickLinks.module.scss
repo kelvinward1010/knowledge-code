@@ -1,0 +1,21 @@
+.container {
+    min-width: 150px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+
+    li {
+        padding-left: 10px;
+        border-left: teal 1px solid;
+        list-style: none;
+
+        a {
+            color: black;
+        }
+    }
+}
+
+.activeLink {
+    color: teal !important;
+    font-weight: 600;
+}
