@@ -24,4 +24,42 @@ export const dataReact: IDataStatic[] = [
             "Việc sử dụng Virtual DOM cho phép cập nhật hiệu quả hơn vì nó làm giảm lượng thao tác trực tiếp trên DOM thực tế, vốn có thể là một quá trình chậm và tốn nhiều tài nguyên. Bằng cách chỉ cập nhật các phần thực sự đã thay đổi, React có thể cải thiện hiệu suất của ứng dụng, đặc biệt là trên các thiết bị chậm hoặc khi xử lý lượng dữ liệu lớn.",
         ],
     },
+    {
+        key: "heading4",
+        data: [
+            'React xử lý các bản cập nhật (update) và kết xuất (rendering) thông qua DOM ảo và kiến trúc dựa trên thành phần. Khi state hoặc props của Component thay đổi, React tạo phiên bản mới của DOM ảo phản ánh state hoặc props đã cập nhật, sau đó so sánh với phiên bản trước đó để xác định những gì đã thay đổi. React cập nhật DOM thực tế với số lượng thao tác tối thiểu cần thiết để đưa nó phù hợp với phiên bản mới của DOM ảo, một quy trình được gọi là "điều hòa" (reconciliation). React cũng sử dụng kiến trúc dựa trên Component, trong đó mỗi Component có trạng thái và phương thức kết xuất riêng. Nó chỉ kết xuất lại các thành phần thực sự đã thay đổi. Nó thực hiện việc này một cách hiệu quả và nhanh chóng, đó là lý do tại sao React được biết đến với hiệu suất của nó.',
+        ],
+    },
+    {
+        key: "heading5",
+        data: [
+            'Thành phần (Component) React là một hàm (function) hoặc lớp (class) JavaScript trả về một phần tử React, mô tả giao diện người dùng cho một phần của ứng dụng. Các thành phần có thể chấp nhận các đầu vào được gọi là "props" và quản lý trạng thái (state) của riêng chúng.',
+        ],
+    },
+    {
+        key: "heading6",
+        data: [
+            "State và props đều được dùng để lưu trữ dữ liệu trong thành phần (Component) React, nhưng chúng phục vụ các mục đích khác nhau và có các đặc điểm khác nhau.",
+            'Props (viết tắt của "properties") là một cách để truyền dữ liệu từ thành phần cha sang thành phần con. Chúng chỉ đọc và không thể được thành phần con sửa đổi.',
+            "Ngược lại, trạng thái (state) là một đối tượng lưu trữ dữ liệu của một thành phần có thể thay đổi theo thời gian. Nó có thể được cập nhật bằng phương thức setState() và được sử dụng để kiểm soát hành vi và kết xuất của một thành phần.",
+        ],
+    },
+    {
+        key: "heading7",
+        data: [
+            "Redux là 1 công cụ giúp quản lý các biến global state trong ứng dụng React hay các thư viện JavaScript nào khác. Khi ứng dụng của chúng ta trở nên lớn hơn với hàng trăm hay hàng nghìn components thì việc chia sẻ dữ liệu giữa các Components với nhau cũng trở nên phức tạp hơn. Redux tạo ra 1 store lưu trữ dữ liệu của ứng dụng vào một nơi duy nhất, sau đó bằng cách connect đến store thì Component của chúng ta có thể lấy ra để sử dụng hoặc cập nhật để thay đổi giá trị biến.",
+            "3 thành phần cơ bản trong Redux gồm:",
+            "Store: Nơi giữ các biến trạng thái của ứng dụng, với mô hình Redux thì sẽ chỉ tồn tại một store duy nhất",
+            "Actions: các sự kiện được gửi đến để cập nhật dữ liệu các biến trong store của Redux",
+            "Reducers: là các function để lấy ra giá trị (trạng thái) của các biến trong store.",
+        ],
+    },
+    {
+        key: "heading8",
+        data: [
+            "Higher Order Component (HOC) trong React là một hàm lấy một component và trả về một component mới với các props bổ sung. HOC được sử dụng để tái sử dụng logic trên nhiều component, chẳng hạn như thêm một hành vi (behavior) hoặc kiểu dáng (style) chung.",
+            "HOC được sử dụng bằng cách bao bọc một thành phần trong HOC, thành phần này trả về một thành phần mới với các props được thêm vào. Thành phần gốc được truyền như một đối số cho HOC và nhận các props bổ sung thông qua việc giải cấu trúc. HOC là các hàm thuần túy, nghĩa là chúng không sửa đổi thành phần gốc mà trả về một thành phần mới, được cải tiến.",
+            "HOC là một mô hình mạnh mẽ trong React, cho phép tái sử dụng và trừu tượng hóa mã, đồng thời giữ cho các thành phần có tính mô-đun và dễ bảo trì.",
+        ],
+    },
 ];

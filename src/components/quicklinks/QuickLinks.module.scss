@@ -3,10 +3,11 @@
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    top: 60px;
 
     li {
         padding-left: 10px;
-        border-left: teal 1px solid;
+        border-left: black 1px solid;
         list-style: none;
 
         a {
@@ -18,4 +19,8 @@
 .activeLink {
     color: teal !important;
     font-weight: 600;
+}
+
+.activeLi {
+    border-color: teal !important;
 }

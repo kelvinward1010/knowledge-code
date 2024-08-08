@@ -14,7 +14,10 @@ export function QuickLinks({ list }: QuickLinksProps) {
     return (
         <ul className={styles.container}>
             {list.map((link, idx) => (
-                <li key={idx}>
+                <li
+                    key={idx}
+                    className={activeLink === link.key ? styles.activeLi : ""}
+                >
                     <a
                         href={`#${link.key}`}
                         className={

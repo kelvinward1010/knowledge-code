@@ -11,15 +11,35 @@ const { Title } = Typography;
 const list = [
     {
         key: "heading1",
-        lable: "What is React?",
+        lable: "1. What is React?",
     },
     {
         key: "heading2",
-        lable: "Các chức năng chính trong React?",
+        lable: "2. Các chức năng chính trong React?",
     },
     {
         key: "heading3",
-        lable: "DOM ảo là gì, nó hoạt động như thế nào?",
+        lable: "3. DOM ảo là gì, nó hoạt động như thế nào?",
+    },
+    {
+        key: "heading4",
+        lable: "4. React xử lý cập nhật (update) và kết xuất (rendering)?",
+    },
+    {
+        key: "heading5",
+        lable: "5. Giải thích khái niệm của Component trong React?",
+    },
+    {
+        key: "heading6",
+        lable: "6. Sự khác nhau giữa state và props?",
+    },
+    {
+        key: "heading7",
+        lable: "7. Redux là gì và nó hoạt động như nào với React?",
+    },
+    {
+        key: "heading8",
+        lable: "8. Khái niệm và giải thích về Higher Order Components (HOC) trong React?",
     },
 ];
 
@@ -27,6 +47,11 @@ export function InterviewReact() {
     const data1: IDataStatic = takeData("heading1", dataReact);
     const data2: IDataStatic = takeData("heading2", dataReact);
     const data3: IDataStatic = takeData("heading3", dataReact);
+    const data4: IDataStatic = takeData("heading4", dataReact);
+    const data5: IDataStatic = takeData("heading5", dataReact);
+    const data6: IDataStatic = takeData("heading6", dataReact);
+    const data7: IDataStatic = takeData("heading7", dataReact);
+    const data8: IDataStatic = takeData("heading8", dataReact);
 
     return (
         <div className={styles.container}>
@@ -58,6 +83,57 @@ export function InterviewReact() {
                     <TextConfig textdata={data3.data[2]} />
                     <br />
                     <TextConfig textdata={data3.data[3]} />
+                    <br />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading4">
+                        4. React xử lý cập nhật (update) và kết xuất
+                        (rendering)?
+                    </Title>
+                    <TextConfig textdata={data4.data[0]} />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading5">
+                        5. Giải thích khái niệm của Component trong React?
+                    </Title>
+                    <TextConfig textdata={data5.data[0]} />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading6">
+                        6. Sự khác nhau giữa state và props?
+                    </Title>
+                    <TextConfig textdata={data6.data[0]} />
+                    <br />
+                    <TextConfig textdata={data6.data[1]} />
+                    <br />
+                    <TextConfig textdata={data6.data[2]} />
+                    <br />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading7">
+                        7. Redux là gì và nó hoạt động như nào với React?
+                    </Title>
+                    <TextConfig textdata={data7.data[0]} />
+                    <br />
+                    <TextConfig textdata={data7.data[1]} />
+                    <br />
+                    <TextConfig textdata={data7.data[2]} />
+                    <br />
+                    <TextConfig textdata={data7.data[3]} />
+                    <br />
+                    <TextConfig textdata={data7.data[4]} />
+                    <br />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading8">
+                        8. Khái niệm và giải thích về Higher Order Components
+                        (HOC) trong React?
+                    </Title>
+                    <TextConfig textdata={data8.data[0]} />
+                    <br />
+                    <TextConfig textdata={data8.data[1]} />
+                    <br />
+                    <TextConfig textdata={data8.data[2]} />
                     <br />
                 </div>
             </div>
