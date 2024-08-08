@@ -1,6 +1,7 @@
 import {
     homeUrl,
     hooksReactUrl,
+    interviewsNodeJSUrl,
     interviewsReactUrl,
     interviewsUrl,
     introduceNodejsUrl,
@@ -29,6 +30,10 @@ export const defaultMenus = [
             {
                 path: interviewsReactUrl,
                 name: "React",
+            },
+            {
+                path: interviewsNodeJSUrl,
+                name: "NodeJS",
             },
         ],
     },

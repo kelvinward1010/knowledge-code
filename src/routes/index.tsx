@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
     homeUrl,
     hooksReactUrl,
+    interviewsNodeJSUrl,
     interviewsReactUrl,
     introduceNodejsUrl,
     introduceReactUrl,
@@ -12,6 +13,7 @@ import { ErrorBoundaryPage } from "@/components/error/boundary-error";
 import {
     Home,
     HooksReact,
+    InterviewNodeJS,
     InterviewReact,
     IntroduceNodejs,
     IntroduceReact,
@@ -58,6 +60,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: interviewsReactUrl,
                 element: <InterviewReact />,
+            },
+            {
+                path: interviewsNodeJSUrl,
+                element: <InterviewNodeJS />,
             },
         ],
     },

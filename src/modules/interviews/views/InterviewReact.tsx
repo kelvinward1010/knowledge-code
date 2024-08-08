@@ -4,8 +4,9 @@ import { QuickLinks } from "@/components/quicklinks/QuickLinks";
 import { dataReact } from "../data";
 import { IDataStatic } from "@/types/data";
 import { takeData } from "@/utils/data";
+import TextConfig from "@/components/textconfig/TextConfig";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const list = [
     {
@@ -34,29 +35,29 @@ export function InterviewReact() {
                     <Title level={5} id="heading1">
                         1. What is React?
                     </Title>
-                    <Text>{data1.data[0]}</Text>
+                    <TextConfig textdata={data1.data[0]} />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading2">
                         2. Các chức năng chính trong React?
                     </Title>
-                    <Text className={styles.textcontent}>{data2.data[0]}</Text>
+                    <TextConfig textdata={data2.data[0]} />
                     <br />
-                    <Text className={styles.textcontent}>{data2.data[1]}</Text>
+                    <TextConfig textdata={data2.data[1]} />
                     <br />
-                    <Text className={styles.textcontent}>{data2.data[2]}</Text>
+                    <TextConfig textdata={data2.data[2]} />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading3">
                         3. DOM ảo là gì, nó hoạt động như thế nào?
                     </Title>
-                    <Text className={styles.textcontent}>{data3.data[0]}</Text>
+                    <TextConfig textdata={data3.data[0]} />
                     <br />
-                    <Text className={styles.textcontent}>{data3.data[1]}</Text>
+                    <TextConfig textdata={data3.data[1]} />
                     <br />
-                    <Text className={styles.textcontent}>{data3.data[2]}</Text>
+                    <TextConfig textdata={data3.data[2]} />
                     <br />
-                    <Text className={styles.textcontent}>{data3.data[3]}</Text>
+                    <TextConfig textdata={data3.data[3]} />
                     <br />
                 </div>
             </div>

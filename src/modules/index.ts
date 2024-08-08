@@ -15,6 +15,11 @@ export const InterviewReact = lazyLoad(
     (module) => module.InterviewReact,
 );
 
+export const InterviewNodeJS = lazyLoad(
+    () => import("./interviews/views/InterviewNodeJS"),
+    (module) => module.InterviewNodeJS,
+);
+
 export const IntroduceReact = lazyLoad(
     () => import("./react/views/IntroduceReact"),
     (module) => module.IntroduceReact,
