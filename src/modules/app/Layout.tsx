@@ -12,11 +12,11 @@ import { defaultMenus } from "./menus";
 import styles from "./Layout.module.scss";
 import "./index.css";
 import {
+    FacebookFilled,
     GithubFilled,
     GithubOutlined,
-    InfoCircleFilled,
+    LinkedinFilled,
     LogoutOutlined,
-    QuestionCircleFilled,
 } from "@ant-design/icons";
 import { Dropdown, Input } from "antd";
 
@@ -118,9 +118,27 @@ export const Layout: React.FC<LayoutProps> = (props) => {
                 if (props.isMobile) return [];
                 if (typeof window === "undefined") return [];
                 return [
-                    <InfoCircleFilled key="InfoCircleFilled" />,
-                    <QuestionCircleFilled key="QuestionCircleFilled" />,
-                    <GithubFilled key="GithubFilled" />,
+                    <a
+                        className={styles.link}
+                        href="www.linkedin.com/in/dao-van-duy-29a10928b"
+                        target="_blank"
+                    >
+                        <LinkedinFilled key="InfoCircleFilled" />
+                    </a>,
+                    <a
+                        className={styles.link}
+                        href="https://www.facebook.com/duy.kelvinward"
+                        target="_blank"
+                    >
+                        <FacebookFilled key="QuestionCircleFilled" />
+                    </a>,
+                    <a
+                        className={styles.link}
+                        href="https://github.com/kelvinward1010"
+                        target="_blank"
+                    >
+                        <GithubFilled key="GithubFilled" />
+                    </a>,
                 ];
             }}
             breadcrumbRender={(routers = []) => [

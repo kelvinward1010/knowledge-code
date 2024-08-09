@@ -13,3 +13,7 @@ export const hooksReactUrl = `${reactUrl}/hooks`;
 
 export const nodejsUrl = "/nodejs";
 export const introduceNodejsUrl = `${nodejsUrl}/introduce`;
+
+export const cicdUrl = "/ci-cd";
+export const introduceCicdUrl = `${cicdUrl}/introduce-cicd`;
+export const dockervsjenkinsUrl = `${cicdUrl}/docker-and-jenkins`;

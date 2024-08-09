@@ -1,11 +1,14 @@
 import {
-    homeUrl,
+    cicdUrl,
+    dockervsjenkinsUrl,
     hooksReactUrl,
     interviewsNodeJSUrl,
     interviewsReactUrl,
     interviewsUrl,
+    introduceCicdUrl,
     introduceNodejsUrl,
     introduceReactUrl,
+    layoutUrl,
     nodejsUrl,
     reactUrl,
 } from "@/routes/urls";
@@ -14,11 +17,12 @@ import {
     IconBrandReact,
     IconGenderIntergender,
     IconHomeFilled,
+    IconRocket,
 } from "@tabler/icons-react";
 
 export const defaultMenus = [
     {
-        path: homeUrl,
+        path: layoutUrl,
         name: "Home",
         icon: <IconHomeFilled size={17} />,
     },
@@ -60,6 +64,21 @@ export const defaultMenus = [
             {
                 path: introduceNodejsUrl,
                 name: "Introduce NodeJS",
+            },
+        ],
+    },
+    {
+        path: cicdUrl,
+        name: "CI/CD",
+        icon: <IconRocket size={17} />,
+        routes: [
+            {
+                path: introduceCicdUrl,
+                name: "Introduce CI/CD",
+            },
+            {
+                path: dockervsjenkinsUrl,
+                name: "Docker vs Jenkins",
             },
         ],
     },

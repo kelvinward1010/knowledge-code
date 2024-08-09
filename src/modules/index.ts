@@ -34,3 +34,13 @@ export const IntroduceNodejs = lazyLoad(
     () => import("./nodejs/views/IntroduceNodejs"),
     (module) => module.IntroduceNodejs,
 );
+
+export const IntroduceCiCd = lazyLoad(
+    () => import("./ci-cd/views/IntroduceCiCd"),
+    (module) => module.IntroduceCiCd,
+);
+
+export const DockerVsJenkins = lazyLoad(
+    () => import("./ci-cd/views/DockerVsJenkins"),
+    (module) => module.DockerVsJenkins,
+);

@@ -1,9 +1,11 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
+    dockervsjenkinsUrl,
     homeUrl,
     hooksReactUrl,
     interviewsNodeJSUrl,
     interviewsReactUrl,
+    introduceCicdUrl,
     introduceNodejsUrl,
     introduceReactUrl,
     layoutUrl,
@@ -11,10 +13,12 @@ import {
 } from "./urls";
 import { ErrorBoundaryPage } from "@/components/error/boundary-error";
 import {
+    DockerVsJenkins,
     Home,
     HooksReact,
     InterviewNodeJS,
     InterviewReact,
+    IntroduceCiCd,
     IntroduceNodejs,
     IntroduceReact,
     Layout,
@@ -42,7 +46,7 @@ export const routerConfig = createBrowserRouter([
         ),
         children: [
             {
-                path: homeUrl,
+                path: layoutUrl,
                 element: <Home />,
             },
             {
@@ -64,6 +68,14 @@ export const routerConfig = createBrowserRouter([
             {
                 path: interviewsNodeJSUrl,
                 element: <InterviewNodeJS />,
+            },
+            {
+                path: introduceCicdUrl,
+                element: <IntroduceCiCd />,
+            },
+            {
+                path: dockervsjenkinsUrl,
+                element: <DockerVsJenkins />,
             },
         ],
     },
