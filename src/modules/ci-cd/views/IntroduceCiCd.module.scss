@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+
+    .content {
+        .box {
+            margin-top: 20px;
+
+            .textcontent {
+                margin-top: 10px;
+            }
+        }
+    }
+}
