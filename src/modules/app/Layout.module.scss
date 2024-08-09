@@ -6,7 +6,9 @@
         margin-right: 10px;
 
         .search {
-            width: 150px !important;
+            min-width: 50px !important;
+            width: 100%;
+            max-width: 150px !important;
         }
     }
 
