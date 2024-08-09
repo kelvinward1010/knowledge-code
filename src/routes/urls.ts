@@ -4,6 +4,7 @@ export const layoutUrl = "/";
 export const homeUrl = "/home";
 
 export const interviewsUrl = "/interviews";
+export const interviewsOtherUrl = `${interviewsUrl}/other`;
 export const interviewsReactUrl = `${interviewsUrl}/react`;
 export const interviewsNodeJSUrl = `${interviewsUrl}/nodejs`;
 

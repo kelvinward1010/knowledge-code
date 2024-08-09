@@ -3,6 +3,7 @@ import {
     dockervsjenkinsUrl,
     hooksReactUrl,
     interviewsNodeJSUrl,
+    interviewsOtherUrl,
     interviewsReactUrl,
     introduceCicdUrl,
     introduceNodejsUrl,
@@ -16,6 +17,7 @@ import {
     Home,
     HooksReact,
     InterviewNodeJS,
+    InterviewOther,
     InterviewReact,
     IntroduceCiCd,
     IntroduceNodejs,
@@ -59,6 +61,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: introduceNodejsUrl,
                 element: <IntroduceNodejs />,
+            },
+            {
+                path: interviewsOtherUrl,
+                element: <InterviewOther />,
             },
             {
                 path: interviewsReactUrl,

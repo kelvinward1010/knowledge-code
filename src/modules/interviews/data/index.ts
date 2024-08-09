@@ -63,3 +63,12 @@ export const dataReact: IDataStatic[] = [
         ],
     },
 ];
+
+export const dataInterviewNodejs: IDataStatic[] = [
+    {
+        key: "heading1",
+        data: [
+            "NodeJS là một mã nguồn được xây dựng trên Javascript Engine (V8 Engine). NodeJS cũng được biết đến như một nền tảng (Platform) được phát triển năm 2009 bởi Ryan Dahl. NodeJS dựa trên Chrome Javascript runtime phát triển các ứng dụng web, tận dụng kiến trúc hướng sự kiện (event-driven), mô hình non-blocking I/O để tạo ra các ứng dụng nhẹ và hiệu quả. Những ứng dụng Node.js được viết bằng Javascript, chúng có thể chạy trong môi trường NodeJS trên hệ điều hành Window, Linux,...",
+        ],
+    },
+];
