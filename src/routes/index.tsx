@@ -1,7 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
     dockervsjenkinsUrl,
-    homeUrl,
     hooksReactUrl,
     interviewsNodeJSUrl,
     interviewsReactUrl,
