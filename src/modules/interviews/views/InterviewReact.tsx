@@ -5,6 +5,7 @@ import { dataReact } from "../data";
 import { IDataStatic } from "@/types/data";
 import { takeData } from "@/utils/data";
 import TextConfig from "@/components/textconfig/TextConfig";
+import { useFollowWidth } from "@/hooks/useFollowWidth";
 
 const { Title } = Typography;
 
@@ -92,6 +93,8 @@ const list = [
 ];
 
 export function InterviewReact() {
+    const { isBigger, isSmaller } = useFollowWidth(768);
+
     const data1: IDataStatic = takeData("heading1", dataReact);
     const data2: IDataStatic = takeData("heading2", dataReact);
     const data3: IDataStatic = takeData("heading3", dataReact);
@@ -115,6 +118,7 @@ export function InterviewReact() {
 
     return (
         <div className={styles.container}>
+            {isSmaller && <QuickLinks list={list} />}
             <div className={styles.content}>
                 <div className={styles.box}>
                     <Title level={5} id="heading1">
@@ -325,7 +329,7 @@ export function InterviewReact() {
                     <br />
                 </div>
             </div>
-            <QuickLinks list={list} />
+            {isBigger && <QuickLinks list={list} />}
         </div>
     );
 }

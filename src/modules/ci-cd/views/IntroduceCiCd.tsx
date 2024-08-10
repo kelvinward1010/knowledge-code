@@ -5,6 +5,7 @@ import { dataintroduceCICD } from "../config";
 import { takeData } from "@/utils/data";
 import { IDataStatic } from "@/types/data";
 import TextConfig from "@/components/textconfig/TextConfig";
+import { useFollowWidth } from "@/hooks/useFollowWidth";
 
 const { Title } = Typography;
 
@@ -28,6 +29,7 @@ const list = [
 ];
 
 export function IntroduceCiCd() {
+    const { isBigger, isSmaller } = useFollowWidth(768);
     const data1: IDataStatic = takeData("heading1", dataintroduceCICD);
     const data2: IDataStatic = takeData("heading2", dataintroduceCICD);
     const data3: IDataStatic = takeData("heading3", dataintroduceCICD);
@@ -35,10 +37,11 @@ export function IntroduceCiCd() {
 
     return (
         <div className={styles.container}>
+            {isSmaller && <QuickLinks list={list} />}
             <div className={styles.content}>
                 <div className={styles.box}>
                     <Title level={5} id="heading1">
-                        1. CI/CD là gì?
+                        {list[0].lable}
                     </Title>
                     <TextConfig textdata={data1.data[0]} />
                     <br />
@@ -51,7 +54,7 @@ export function IntroduceCiCd() {
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading2">
-                        2. Cách thức hoạt động của CI/CD
+                        {list[1].lable}
                     </Title>
                     <TextConfig textdata={data2.data[0]} />
                     <br />
@@ -66,21 +69,21 @@ export function IntroduceCiCd() {
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading3">
-                        3. Ưu điểm và nhược điểm của CI/CD
+                        {list[2].lable}
                     </Title>
                     <TextConfig textdata={data3.data[0]} />
                     <br />
-                    - <TextConfig textdata={data3.data[1]} />
+                    <TextConfig textdata={data3.data[1]} />
                     <br />
-                    - <TextConfig textdata={data3.data[2]} />
+                    <TextConfig textdata={data3.data[2]} />
                     <br />
-                    - <TextConfig textdata={data3.data[3]} />
+                    <TextConfig textdata={data3.data[3]} />
                     <br />
-                    - <TextConfig textdata={data3.data[4]} />
+                    <TextConfig textdata={data3.data[4]} />
                     <br />
-                    - <TextConfig textdata={data3.data[5]} />
+                    <TextConfig textdata={data3.data[5]} />
                     <br />
-                    - <TextConfig textdata={data3.data[6]} />
+                    <TextConfig textdata={data3.data[6]} />
                     <br />
                     <TextConfig textdata={data3.data[7]} />
                     <br />
@@ -89,7 +92,7 @@ export function IntroduceCiCd() {
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading4">
-                        4. Khi nào nên áp dụng quy trình CI/CD
+                        {list[3].lable}
                     </Title>
                     <TextConfig textdata={data4.data[0]} />
                     <br />
@@ -99,7 +102,7 @@ export function IntroduceCiCd() {
                     <br />
                 </div>
             </div>
-            <QuickLinks list={list} />
+            {isBigger && <QuickLinks list={list} />}
         </div>
     );
 }
