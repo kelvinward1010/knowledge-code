@@ -19,6 +19,7 @@ import {
     LogoutOutlined,
 } from "@ant-design/icons";
 import { Dropdown, Input } from "antd";
+import ButtonToTop from "@/components/buttontotop/ButtonToTop";
 
 export type LayoutProps = {
     children?: React.ReactNode;
@@ -159,7 +160,10 @@ export const Layout: React.FC<LayoutProps> = (props) => {
             footerRender={() => defaultFooterDom}
         >
             <PageContainer>
-                <Outlet />
+                <div>
+                    <Outlet />
+                    <ButtonToTop />
+                </div>
                 {children}
             </PageContainer>
         </ProLayout>
