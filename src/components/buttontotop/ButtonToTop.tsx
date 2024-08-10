@@ -23,13 +23,13 @@ function ButtonToTop() {
 
     return (
         <>
-            {showButton ? (
+            {showButton && (
                 <ButtonConfig
                     icon={<ArrowUpOutlined />}
                     onClick={scrollToTop}
                     className={styles.scrollToTop}
                 />
-            ) : null}
+            )}
         </>
     );
 }

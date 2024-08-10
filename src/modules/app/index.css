@@ -12,3 +12,7 @@
     .ant-page-header-heading {
     display: none;
 }
+
+.ant-pro-layout .ant-pro-sider.ant-pro-sider-fixed {
+    background: white !important;
+}
