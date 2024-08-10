@@ -62,6 +62,101 @@ export const dataReact: IDataStatic[] = [
             "HOC là một mô hình mạnh mẽ trong React, cho phép tái sử dụng và trừu tượng hóa mã, đồng thời giữ cho các thành phần có tính mô-đun và dễ bảo trì.",
         ],
     },
+    {
+        key: "heading9",
+        data: [
+            "Hooks là những function cho phép bạn sử dụng các biến state và các hàm liên quan đến lifecycle ở trong các functional Components. Hooks giúp giảm lượng code thừa khi phải triển khai lại các logic có thể dùng chung ở nhiều components khác nhau mà cần liên quan đến local state. React cung cấp sẵn cho chúng ta một số các hook hữu ích: useState, useEffect, useContext, useMemo...",
+            "Chúng giúp dễ dàng tái sử dụng trạng thái và logic trên nhiều thành phần, giúp mã ngắn gọn hơn và dễ đọc hơn. Chúng giúp dễ dàng viết mã có thể tái sử dụng và bảo trì.",
+        ],
+    },
+    {
+        key: "heading10",
+        data: [
+            "Inline Styling: Khai báo trực tiếp CSS vào thuộc tính style tại các Element",
+            "CSS module: tạo file .css riêng và import vào component",
+            "Sử dụng thư viện styled-components tạo ra một component mới kèm css",
+        ],
+    },
+    {
+        key: "heading11",
+        data: [
+            "Hook useEffect trong React cho phép các nhà phát triển thực hiện các hiệu ứng phụ như lấy dữ liệu, đăng ký và thiết lập/dọn dẹp bộ đếm thời gian trong các thành phần chức năng. Nó chạy sau mỗi lần kết xuất, bao gồm lần kết xuất đầu tiên và sau khi kết xuất được cam kết với màn hình. Hook useEffect lấy hai đối số - một hàm để chạy sau mỗi lần kết xuất và một mảng các phụ thuộc xác định thời điểm hiệu ứng nên được chạy. Nếu mảng phụ thuộc trống hoặc không có, hiệu ứng sẽ chạy sau mỗi lần kết xuất.",
+        ],
+    },
+    {
+        key: "heading12",
+        data: [
+            "React xử lý định tuyến bằng cách sử dụng thư viện React Router, cung cấp khả năng định tuyến cho các ứng dụng React. Một số thư viện định tuyến phổ biến cho React bao gồm React Router, Reach Router và Next.js.",
+        ],
+    },
+    {
+        key: "heading13",
+        data: [
+            "Sử dụng useEffect và useState:Trong functional components, useEffect kết hợp với useState là cách được khuyến nghị để xử lý các hàm bất đồng bộ. Ví dụ: Nếu bạn muốn gọi một API và cập nhật state khi dữ liệu trả về, bạn có thể sử dụng useEffect để thực hiện việc này. Đảm bảo bạn truyền vào dependency array (tham số thứ hai của useEffect) để kiểm soát việc gọi lại hàm khi props hoặc state thay đổi.",
+            "Tránh race condition: Khi bạn gọi nhiều hàm bất đồng bộ cùng một lúc (ví dụ: khi props thay đổi), hãy đảm bảo rằng bạn xử lý chúng một cách đồng bộ. Sử dụng async/await để đảm bảo rằng hàm tiếp theo chỉ được gọi sau khi hàm trước đã hoàn thành.",
+            "Xử lý unmounting: Khi component bị unmount (ví dụ: khi người dùng chuyển qua trang khác), hãy hủy bỏ các tác vụ bất đồng bộ đang chạy (ví dụ: hủy bỏ request API). Bạn có thể sử dụng biến flag để kiểm tra xem component có còn tồn tại hay không, trước khi cập nhật state hoặc thực hiện các tác vụ khác.",
+            "Custom hooks: Một cách tiếp cận khác là tạo custom hooks để xử lý các tác vụ bất đồng bộ phức tạp. Custom hooks giúp bạn tái sử dụng logic xử lý bất đồng bộ một cách hiệu quả.",
+        ],
+    },
+    {
+        key: "heading14",
+        data: [
+            "React xử lý việc thử nghiệm bằng các framework thử nghiệm như Jest, Mocha và Enzyme. Jest là một framework thử nghiệm phổ biến cho các ứng dụng React, trong khi Mocha và Enzyme cũng được sử dụng rộng rãi.",
+        ],
+    },
+    {
+        key: "heading15",
+        data: [
+            "Lifecycle (vòng đời) của một component trong React có 3 giai đoạn:",
+            "- Mounting: giai đoạn khởi tạo – khi component đã sẵn sàng để gắn kết trong DOM của trình duyệt để hiển thị lên cho người dùng.",
+            "- Updating: giai đoạn component được cập nhật – để cập nhật component thì chúng ta có thể truyền props mới đến component hoặc set lại local state bên trong component đó. Sau khi component render lại thì cây DOM vị trí chứa component cũng sẽ được hiển thị với các giá trị mới để người dùng nhìn thấy.",
+            "- Unmounting: giai đoạn component bị ngắt kết nối, bỏ ra khỏi cây DOM của trình duyệt. Đây cũng là giai đoạn cuối trong vòng đời của component. Từ lúc này component sẽ không thể được truy cập hay tác động nữa trừ khi nó được mouting và bắt đầu mộ lifecycle mới.",
+        ],
+    },
+    {
+        key: "heading16",
+        data: [
+            "Kết xuất phía máy chủ (SSR) và kết xuất phía máy khách (CSR) là hai cách khác nhau để kết xuất ứng dụng React.",
+            "Trong SSR, HTML ban đầu được tạo trên máy chủ, sau đó được gửi đến máy khách, nơi nó được hydrat hóa thành một ứng dụng React đầy đủ. Điều này dẫn đến thời gian tải ban đầu nhanh hơn, vì HTML đã có trên trang và có thể được lập chỉ mục bởi các công cụ tìm kiếm.",
+            "Trong CSR, HTML ban đầu là một tài liệu tối thiểu, trống rỗng và ứng dụng React được xây dựng và hiển thị hoàn toàn trên máy khách. Máy khách thực hiện các lệnh gọi API để lấy dữ liệu cần thiết để hiển thị UI. Điều này dẫn đến thời gian tải ban đầu chậm hơn, nhưng trải nghiệm phản hồi và năng động hơn, vì tất cả quá trình hiển thị đều được thực hiện trên máy khách.",
+        ],
+    },
+    {
+        key: "heading17",
+        data: [
+            "Sử dụng SSR khi bạn cần:",
+            "- Tối ưu hóa SEO cho ứng dụng web.",
+            "- Hiển thị nội dung nhanh cho người dùng.",
+            "- Cung cấp trải nghiệm tương tác tốt cho người dùng.",
+            "Sử dụng CSR khi bạn muốn:",
+            "- Xây dựng ứng dụng web tương tác và động.",
+            "- Tải nội dung ban đầu và tải dữ liệu sau khi tải trang.",
+            "Sử dụng SSG khi bạn cần:",
+            "- Hiển thị nội dung tĩnh (không thay đổi) cho người dùng.",
+            "- Hiệu suất và bảo mật tối ưu.",
+        ],
+    },
+    {
+        key: "heading18",
+        data: [
+            "Refs(References trong React) là thuộc tính giúp lưu trữ tham chiếu đến một phần tử hay thành phần React cụ thể. Chúng được trả về bởi hàm cấu hình thành phần.",
+            "Đây cũng là lúc được sử dụng để trả về các tham chiếu đến từ một phần tử, thành phần cụ thể được trả bởi render. Chúng hữu ích khi cần các phép đo DOM hay thêm phương thức các thành phần.",
+        ],
+    },
+    {
+        key: "heading19",
+        data: [
+            "React.memo là một HOC (Higher Order Component) giúp bạn tối ưu hóa việc re-render của component.",
+            "Khi bạn bao bọc một component bằng React.memo, nó sẽ ngăn chặn việc re-render cho đến khi props của component thay đổi",
+        ],
+    },
+    {
+        key: "heading20",
+        data: [
+            "Trợ giúp chính React xác định những mục nào đã thay đổi, được thêm vào hoặc bị xóa. Key nên được cung cấp cho các phần tử bên trong mảng để cung cấp cho các phần tử một định nghĩa ổn định.",
+            "Cách tốt nhất để chọn một khóa là sử dụng một chuỗi duy nhất để xác định một mục giữa các mục trong danh sách.",
+        ],
+    },
 ];
 
 export const dataInterviewNodejs: IDataStatic[] = [
