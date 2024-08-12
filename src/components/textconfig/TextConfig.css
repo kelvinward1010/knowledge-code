@@ -1,3 +1,7 @@
 .textfix {
     text-indent: 30px;
 }
+
+div {
+    margin-top: 8px;
+}

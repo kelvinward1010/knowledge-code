@@ -166,4 +166,11 @@ export const dataInterviewNodejs: IDataStatic[] = [
             "NodeJS là một mã nguồn được xây dựng trên Javascript Engine (V8 Engine). NodeJS cũng được biết đến như một nền tảng (Platform) được phát triển năm 2009 bởi Ryan Dahl. NodeJS dựa trên Chrome Javascript runtime phát triển các ứng dụng web, tận dụng kiến trúc hướng sự kiện (event-driven), mô hình non-blocking I/O để tạo ra các ứng dụng nhẹ và hiệu quả. Những ứng dụng Node.js được viết bằng Javascript, chúng có thể chạy trong môi trường NodeJS trên hệ điều hành Window, Linux,...",
         ],
     },
+    {
+        key: "heading2",
+        data: [
+            "Blocking là khái niệm đề cập đến hành động chặn thực thi các hoạt động tiếp theo để chờ một hoạt động kết thúc; ngược lại thì non-blocking chỉ việc sẽ không chặn. Trong Node, Non-blocking chủ yếu đề cập đến các hoạt động nhập xuất dữ liệu (I/O - input/output); tất cả các function xử lý I/O trong thư viện chuẩn của NodeJS đều cung cấp phiên bản đồng bộ, bất đồng bộ và chấp nhận các hàm callback.",
+            "Thay vì việc cần chờ các hoạt động nhập xuất dữ liệu thực hiện xong thì các hoạt động tiếp theo vẫn có thể được thực thi ngay lập tức; riêng luồng I/O ở trên sẽ được ủy quyền cho hệ thống để thực hiện riêng song song, khi hoàn tất sẽ thực hiện việc gọi lại function callback để xử lý hành động tiếp theo.",
+        ],
+    },
 ];

@@ -131,9 +131,7 @@ export function InterviewReact() {
                         {list[1].lable}
                     </Title>
                     <TextConfig textdata={data2.data[0]} />
-                    <br />
                     <TextConfig textdata={data2.data[1]} />
-                    <br />
                     <TextConfig textdata={data2.data[2]} />
                 </div>
                 <div className={styles.box}>
@@ -141,13 +139,9 @@ export function InterviewReact() {
                         {list[2].lable}
                     </Title>
                     <TextConfig textdata={data3.data[0]} />
-                    <br />
                     <TextConfig textdata={data3.data[1]} />
-                    <br />
                     <TextConfig textdata={data3.data[2]} />
-                    <br />
                     <TextConfig textdata={data3.data[3]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading4">
@@ -166,167 +160,121 @@ export function InterviewReact() {
                         {list[5].lable}
                     </Title>
                     <TextConfig textdata={data6.data[0]} />
-                    <br />
                     <TextConfig textdata={data6.data[1]} />
-                    <br />
                     <TextConfig textdata={data6.data[2]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading7">
                         {list[6].lable}
                     </Title>
                     <TextConfig textdata={data7.data[0]} />
-                    <br />
                     <TextConfig textdata={data7.data[1]} />
-                    <br />
                     <TextConfig textdata={data7.data[2]} />
-                    <br />
                     <TextConfig textdata={data7.data[3]} />
-                    <br />
                     <TextConfig textdata={data7.data[4]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading8">
                         {list[7].lable}
                     </Title>
                     <TextConfig textdata={data8.data[0]} />
-                    <br />
                     <TextConfig textdata={data8.data[1]} />
-                    <br />
                     <TextConfig textdata={data8.data[2]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading9">
                         {list[8].lable}
                     </Title>
                     <TextConfig textdata={data9.data[0]} />
-                    <br />
                     <TextConfig textdata={data9.data[1]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading10">
                         {list[9].lable}
                     </Title>
                     <TextConfig textdata={data10.data[0]} />
-                    <br />
                     <TextConfig textdata={data10.data[1]} />
-                    <br />
                     <TextConfig textdata={data10.data[2]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading11">
                         {list[10].lable}
                     </Title>
                     <TextConfig textdata={data11.data[0]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading12">
                         {list[11].lable}
                     </Title>
                     <TextConfig textdata={data12.data[0]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading13">
                         {list[12].lable}
                     </Title>
                     <TextConfig textdata={data13.data[0]} />
-                    <br />
                     <TextConfig textdata={data13.data[1]} />
-                    <br />
                     <TextConfig textdata={data13.data[2]} />
-                    <br />
                     <TextConfig textdata={data13.data[3]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading14">
                         {list[13].lable}
                     </Title>
                     <TextConfig textdata={data14.data[0]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading15">
                         {list[14].lable}
                     </Title>
                     <TextConfig textdata={data15.data[0]} />
-                    <br />
                     <TextConfig textdata={data15.data[1]} />
-                    <br />
                     <TextConfig textdata={data15.data[2]} />
-                    <br />
                     <TextConfig textdata={data15.data[3]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading16">
                         {list[15].lable}
                     </Title>
                     <TextConfig textdata={data16.data[0]} />
-                    <br />
                     <TextConfig textdata={data16.data[1]} />
-                    <br />
                     <TextConfig textdata={data16.data[2]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading17">
                         {list[16].lable}
                     </Title>
                     <TextConfig textdata={data17.data[0]} />
-                    <br />
                     <TextConfig textdata={data17.data[1]} />
-                    <br />
                     <TextConfig textdata={data17.data[2]} />
-                    <br />
                     <TextConfig textdata={data17.data[3]} />
-                    <br />
                     <TextConfig textdata={data17.data[4]} />
-                    <br />
                     <TextConfig textdata={data17.data[5]} />
-                    <br />
                     <TextConfig textdata={data17.data[6]} />
-                    <br />
                     <TextConfig textdata={data17.data[7]} />
-                    <br />
                     <TextConfig textdata={data17.data[8]} />
-                    <br />
                     <TextConfig textdata={data17.data[9]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading18">
                         {list[17].lable}
                     </Title>
                     <TextConfig textdata={data18.data[0]} />
-                    <br />
                     <TextConfig textdata={data18.data[1]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading19">
                         {list[18].lable}
                     </Title>
                     <TextConfig textdata={data19.data[0]} />
-                    <br />
                     <TextConfig textdata={data19.data[1]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading20">
                         {list[19].lable}
                     </Title>
                     <TextConfig textdata={data20.data[0]} />
-                    <br />
                     <TextConfig textdata={data20.data[1]} />
-                    <br />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}

@@ -44,62 +44,41 @@ export function IntroduceCiCd() {
                         {list[0].lable}
                     </Title>
                     <TextConfig textdata={data1.data[0]} />
-                    <br />
                     <TextConfig textdata={data1.data[1]} />
-                    <br />
                     <TextConfig textdata={data1.data[2]} />
-                    <br />
                     <TextConfig textdata={data1.data[3]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading2">
                         {list[1].lable}
                     </Title>
                     <TextConfig textdata={data2.data[0]} />
-                    <br />
                     <TextConfig textdata={data2.data[1]} />
-                    <br />
                     <TextConfig textdata={data2.data[2]} />
-                    <br />
                     <TextConfig textdata={data2.data[3]} />
-                    <br />
                     <TextConfig textdata={data2.data[4]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading3">
                         {list[2].lable}
                     </Title>
                     <TextConfig textdata={data3.data[0]} />
-                    <br />
                     <TextConfig textdata={data3.data[1]} />
-                    <br />
                     <TextConfig textdata={data3.data[2]} />
-                    <br />
                     <TextConfig textdata={data3.data[3]} />
-                    <br />
                     <TextConfig textdata={data3.data[4]} />
-                    <br />
                     <TextConfig textdata={data3.data[5]} />
-                    <br />
                     <TextConfig textdata={data3.data[6]} />
-                    <br />
                     <TextConfig textdata={data3.data[7]} />
-                    <br />
                     <TextConfig textdata={data3.data[8]} />
-                    <br />
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading4">
                         {list[3].lable}
                     </Title>
                     <TextConfig textdata={data4.data[0]} />
-                    <br />
                     <TextConfig textdata={data4.data[1]} />
-                    <br />
                     <TextConfig textdata={data4.data[2]} />
-                    <br />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}
