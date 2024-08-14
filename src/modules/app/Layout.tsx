@@ -38,7 +38,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
 
     const defaultFooterDom = (
         <DefaultFooter
-            copyright={`${new Date().getFullYear()} 蚂蚁集团体验技术部出品`}
+            copyright={`${new Date().getFullYear()} Kelvin Ward`}
             links={[
                 {
                     key: "Ant Design Pro",
