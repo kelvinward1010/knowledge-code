@@ -174,3 +174,26 @@ export const dataInterviewNodejs: IDataStatic[] = [
         ],
     },
 ];
+
+export const dataInterviewOther: IDataStatic[] = [
+    {
+        key: "heading1",
+        data: [
+            "Cookie:",
+            "- Dung lượng lưu trữ: Giới hạn khoảng 4KB.",
+            "- Thời gian tồn tại: Có thể được thiết lập để hết hạn sau một khoảng thời gian nhất định hoặc khi trình duyệt đóng.",
+            "- Phạm vi truy cập: Có thể truy cập từ cả phía client và server.",
+            "- Bảo mật: Có thể bị đánh cắp nếu không được bảo vệ đúng cách (ví dụ: sử dụng HTTPS).",
+            "LocalStorage:",
+            "- Dung lượng lưu trữ: Lớn hơn nhiều so với cookie, thường khoảng 5-10MB.",
+            "- Thời gian tồn tại: Dữ liệu không bị xóa khi trình duyệt đóng, tồn tại cho đến khi bị xóa thủ công.",
+            "- Phạm vi truy cập: Chỉ có thể truy cập từ phía client.",
+            "- Bảo mật: An toàn hơn cookie vì không được gửi cùng với các yêu cầu HTTP.",
+            "SessionStorage:",
+            "- Dung lượng lưu trữ: Tương tự như localStorage, nhưng thường nhỏ hơn.",
+            "- Thời gian tồn tại: Dữ liệu bị xóa khi phiên trình duyệt kết thúc (khi tab hoặc cửa sổ trình duyệt đóng).",
+            "- Phạm vi truy cập: Chỉ có thể truy cập từ phía client.",
+            "- Bảo mật: An toàn hơn cookie vì không được gửi cùng với các yêu cầu HTTP.",
+        ],
+    },
+];

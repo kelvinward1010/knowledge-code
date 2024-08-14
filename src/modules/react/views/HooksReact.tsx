@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./React.module.scss";
+import styles from "./HooksReact.module.scss";
 
 const { Title } = Typography;
 
