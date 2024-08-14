@@ -23,7 +23,7 @@ const list = [
         lable: "3. Lợi ích của React",
     },
     {
-        key: "heading3",
+        key: "heading4",
         lable: "4. Các khái niệm nâng cao",
     },
 ];
