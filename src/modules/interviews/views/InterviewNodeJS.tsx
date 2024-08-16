@@ -49,7 +49,7 @@ export function InterviewNodeJS() {
                 </div>
                 <div className={styles.box}>
                     <Title level={5} id="heading3">
-                        {list[1].lable}
+                        {list[2].lable}
                     </Title>
                     <TextConfig textdata={data3.data[0]} />
                     <TextConfig
