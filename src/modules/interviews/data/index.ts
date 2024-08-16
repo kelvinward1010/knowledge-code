@@ -173,6 +173,22 @@ export const dataInterviewNodejs: IDataStatic[] = [
             "Thay vì việc cần chờ các hoạt động nhập xuất dữ liệu thực hiện xong thì các hoạt động tiếp theo vẫn có thể được thực thi ngay lập tức; riêng luồng I/O ở trên sẽ được ủy quyền cho hệ thống để thực hiện riêng song song, khi hoàn tất sẽ thực hiện việc gọi lại function callback để xử lý hành động tiếp theo.",
         ],
     },
+    {
+        key: "heading3",
+        data: [
+            "RESTful API (Representational State Transfer) là một kiểu kiến trúc dùng để thiết kế các API cho các ứng dụng web. Nó cho phép các hệ thống khác nhau giao tiếp với nhau thông qua các yêu cầu HTTP như GET, POST, PUT, DELETE...",
+            "Các thành phần chính của RESTful API:",
+            "1. Resource: Tài nguyên là các đối tượng mà API quản lý, ví dụ như người dùng, bài viết, sản phẩm.",
+            "2. HTTP Methods: Các phương thức HTTP được sử dụng để thao tác với tài nguyên:",
+            "- GET: Lấy thông tin tài nguyên.",
+            "- POST: Tạo mới tài nguyên.",
+            "- PUT: Cập nhật tài nguyên.",
+            "- DELETE: Xóa tài nguyên.",
+            "3. URL: Địa chỉ URL đại diện cho tài nguyên.",
+            "4. Status Codes: Mã trạng thái HTTP để thông báo kết quả của yêu cầu (ví dụ: 200 OK, 404 Not Found).",
+            "RESTful API thường trả về dữ liệu dưới dạng JSON hoặc XML, giúp dễ dàng tích hợp và sử dụng trong các ứng dụng web và di động.",
+        ],
+    },
 ];
 
 export const dataInterviewOther: IDataStatic[] = [
