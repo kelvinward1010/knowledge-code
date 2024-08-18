@@ -25,6 +25,11 @@ export const InterviewNodeJS = lazyLoad(
     (module) => module.InterviewNodeJS,
 );
 
+export const InterviewJavaScript = lazyLoad(
+    () => import("./interviews/views/languages/InterviewJavaScript"),
+    (module) => module.InterviewJavaScript,
+);
+
 export const IntroduceReact = lazyLoad(
     () => import("./react/views/IntroduceReact"),
     (module) => module.IntroduceReact,

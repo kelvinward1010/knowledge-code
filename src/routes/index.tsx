@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
     dockervsjenkinsUrl,
     hooksReactUrl,
+    interviewsJavaScriptUrl,
     interviewsNodeJSUrl,
     interviewsOtherUrl,
     interviewsReactUrl,
@@ -16,6 +17,7 @@ import {
     DockerVsJenkins,
     Home,
     HooksReact,
+    InterviewJavaScript,
     InterviewNodeJS,
     InterviewOther,
     InterviewReact,
@@ -73,6 +75,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: interviewsNodeJSUrl,
                 element: <InterviewNodeJS />,
+            },
+            {
+                path: interviewsJavaScriptUrl,
+                element: <InterviewJavaScript />,
             },
             {
                 path: introduceCicdUrl,

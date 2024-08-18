@@ -2,6 +2,7 @@ import {
     cicdUrl,
     dockervsjenkinsUrl,
     hooksReactUrl,
+    interviewsJavaScriptUrl,
     interviewsNodeJSUrl,
     interviewsOtherUrl,
     interviewsReactUrl,
@@ -39,6 +40,15 @@ export const defaultMenus = [
             {
                 path: interviewsNodeJSUrl,
                 name: "NodeJS",
+            },
+            {
+                name: "Languages",
+                routes: [
+                    {
+                        path: interviewsJavaScriptUrl,
+                        name: "JavaScript",
+                    },
+                ],
             },
             {
                 path: interviewsOtherUrl,

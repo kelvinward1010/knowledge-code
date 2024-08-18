@@ -7,6 +7,7 @@ export const interviewsUrl = "/interviews";
 export const interviewsOtherUrl = `${interviewsUrl}/other`;
 export const interviewsReactUrl = `${interviewsUrl}/react`;
 export const interviewsNodeJSUrl = `${interviewsUrl}/nodejs`;
+export const interviewsJavaScriptUrl = `${interviewsUrl}/javascript`;
 
 export const reactUrl = "/react";
 export const introduceReactUrl = `${reactUrl}/introduce`;
