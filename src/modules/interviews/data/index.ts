@@ -92,7 +92,6 @@ export const dataReact: IDataStatic[] = [
     {
         key: "heading13",
         data: [
-            "Sử dụng useEffect và useState:Trong functional components, useEffect kết hợp với useState là cách được khuyến nghị để xử lý các hàm bất đồng bộ. Ví dụ: Nếu bạn muốn gọi một API và cập nhật state khi dữ liệu trả về, bạn có thể sử dụng useEffect để thực hiện việc này. Đảm bảo bạn truyền vào dependency array (tham số thứ hai của useEffect) để kiểm soát việc gọi lại hàm khi props hoặc state thay đổi.",
             "Tránh race condition: Khi bạn gọi nhiều hàm bất đồng bộ cùng một lúc (ví dụ: khi props thay đổi), hãy đảm bảo rằng bạn xử lý chúng một cách đồng bộ. Sử dụng async/await để đảm bảo rằng hàm tiếp theo chỉ được gọi sau khi hàm trước đã hoàn thành.",
             "Xử lý unmounting: Khi component bị unmount (ví dụ: khi người dùng chuyển qua trang khác), hãy hủy bỏ các tác vụ bất đồng bộ đang chạy (ví dụ: hủy bỏ request API). Bạn có thể sử dụng biến flag để kiểm tra xem component có còn tồn tại hay không, trước khi cập nhật state hoặc thực hiện các tác vụ khác.",
             "Custom hooks: Một cách tiếp cận khác là tạo custom hooks để xử lý các tác vụ bất đồng bộ phức tạp. Custom hooks giúp bạn tái sử dụng logic xử lý bất đồng bộ một cách hiệu quả.",
