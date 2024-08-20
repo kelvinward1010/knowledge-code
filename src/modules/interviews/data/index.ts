@@ -211,4 +211,19 @@ export const dataInterviewOther: IDataStatic[] = [
             "- Bảo mật: An toàn hơn cookie vì không được gửi cùng với các yêu cầu HTTP.",
         ],
     },
+    {
+        key: "heading2",
+        data: [
+            "Trong JavaScript, có ba cách phổ biến để xử lý bất đồng bộ: Callback, Promise, và Async/Await. Dưới đây là một cái nhìn tổng quan về từng phương pháp:",
+            "1. Callback",
+            "Callback là một hàm được truyền vào như một tham số của một hàm khác và sẽ được gọi khi hàm đó hoàn thành",
+            "Ưu điểm: Đơn giản và dễ hiểu. Nhược điểm: Dễ dẫn đến “callback hell” khi có nhiều callback lồng nhau.",
+            "2. Promise",
+            "Promise là một đối tượng đại diện cho một giá trị có thể có ngay bây giờ, hoặc trong tương lai, hoặc không bao giờ có",
+            "Ưu điểm: Giúp tránh “callback hell” và dễ đọc hơn. Nhược điểm: Cần hiểu rõ về cách hoạt động của Promise.",
+            "3. Async/Await",
+            "Async/Await là cú pháp mới hơn, giúp viết mã bất đồng bộ trông giống như mã đồng bộ",
+            "Ưu điểm: Dễ đọc và viết hơn, xử lý lỗi dễ dàng hơn. Nhược điểm: Cần hiểu rõ về Promise vì Async/Await dựa trên Promise.",
+        ],
+    },
 ];

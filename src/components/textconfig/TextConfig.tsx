@@ -10,7 +10,7 @@ interface TextConfigProps {
 
 function TextConfig({ classNameText, textdata }: TextConfigProps) {
     return (
-        <div>
+        <div className="containertext">
             <Text className={`${classNameText} textfix`}>
                 &emsp;&nbsp;{textdata}
             </Text>
