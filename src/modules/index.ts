@@ -50,7 +50,7 @@ export const IntroduceCiCd = lazyLoad(
     (module) => module.IntroduceCiCd,
 );
 
-export const DockerVsJenkins = lazyLoad(
-    () => import("./ci-cd/views/DockerVsJenkins"),
-    (module) => module.DockerVsJenkins,
+export const CICDProject = lazyLoad(
+    () => import("./ci-cd/views/CICDProject"),
+    (module) => module.CICDProject,
 );

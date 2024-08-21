@@ -1,6 +1,6 @@
 import {
     cicdUrl,
-    dockervsjenkinsUrl,
+    cicdprojectUrl,
     hooksReactUrl,
     interviewsJavaScriptUrl,
     interviewsNodeJSUrl,
@@ -92,8 +92,8 @@ export const defaultMenus = [
                 name: "Introduce CI/CD",
             },
             {
-                path: dockervsjenkinsUrl,
-                name: "Docker vs Jenkins",
+                path: cicdprojectUrl,
+                name: "CI/CD Project",
             },
         ],
     },

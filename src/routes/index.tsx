@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
-    dockervsjenkinsUrl,
+    cicdprojectUrl,
     hooksReactUrl,
     interviewsJavaScriptUrl,
     interviewsNodeJSUrl,
@@ -14,7 +14,7 @@ import {
 } from "./urls";
 import { ErrorBoundaryPage } from "@/components/error/boundary-error";
 import {
-    DockerVsJenkins,
+    CICDProject,
     Home,
     HooksReact,
     InterviewJavaScript,
@@ -85,8 +85,8 @@ export const routerConfig = createBrowserRouter([
                 element: <IntroduceCiCd />,
             },
             {
-                path: dockervsjenkinsUrl,
-                element: <DockerVsJenkins />,
+                path: cicdprojectUrl,
+                element: <CICDProject />,
             },
         ],
     },

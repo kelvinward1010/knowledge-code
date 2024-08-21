@@ -18,4 +18,4 @@ export const introduceNodejsUrl = `${nodejsUrl}/introduce`;
 
 export const cicdUrl = "/ci-cd";
 export const introduceCicdUrl = `${cicdUrl}/introduce-cicd`;
-export const dockervsjenkinsUrl = `${cicdUrl}/docker-and-jenkins`;
+export const cicdprojectUrl = `${cicdUrl}/ci-cd-project`;
