@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./DockerVsJenkins.module.scss";
+import styles from "./style.module.scss";
 
 const { Title } = Typography;
 

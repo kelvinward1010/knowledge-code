@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./InterviewOther.module.scss";
+import styles from "./style.module.scss";
 import { dataInterviewOther } from "../data";
 import { takeData } from "@/utils/data";
 import { IDataStatic } from "@/types/data";

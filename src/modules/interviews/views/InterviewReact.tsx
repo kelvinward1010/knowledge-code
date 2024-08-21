@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./InterviewReact.module.scss";
+import styles from "./style.module.scss";
 import { QuickLinks } from "@/components/quicklinks/QuickLinks";
 import { dataReact } from "../data";
 import { IDataStatic } from "@/types/data";

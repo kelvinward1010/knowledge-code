@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./InterviewNodeJS.module.scss";
+import styles from "./style.module.scss";
 import { QuickLinks } from "@/components/quicklinks/QuickLinks";
 import TextConfig from "@/components/textconfig/TextConfig";
 import { IDataStatic } from "@/types/data";

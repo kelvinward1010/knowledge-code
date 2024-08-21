@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./IntroduceCiCd.module.scss";
+import styles from "./style.module.scss";
 import { QuickLinks } from "@/components/quicklinks/QuickLinks";
 import { dataintroduceCICD } from "../config";
 import { takeData } from "@/utils/data";
