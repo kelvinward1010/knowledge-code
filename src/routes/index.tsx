@@ -10,6 +10,7 @@ import {
     introduceNodejsUrl,
     introduceReactUrl,
     layoutUrl,
+    prettierhuskylintstagedUrl,
     signinUrl,
 } from "./urls";
 import { ErrorBoundaryPage } from "@/components/error/boundary-error";
@@ -25,6 +26,7 @@ import {
     IntroduceNodejs,
     IntroduceReact,
     Layout,
+    PrettierHuskyLintStaged,
 } from "@/modules";
 
 interface RouteProps {
@@ -51,6 +53,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: layoutUrl,
                 element: <Home />,
+            },
+            {
+                path: prettierhuskylintstagedUrl,
+                element: <PrettierHuskyLintStaged />,
             },
             {
                 path: introduceReactUrl,

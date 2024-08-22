@@ -3,6 +3,9 @@ export const signinUrl = "/sign-in";
 export const layoutUrl = "/";
 export const homeUrl = "/home";
 
+export const devtoolsUrl = "/dev-tools";
+export const prettierhuskylintstagedUrl = `${devtoolsUrl}/prettier-husky-lintstaged`;
+
 export const interviewsUrl = "/interviews";
 export const interviewsOtherUrl = `${interviewsUrl}/other`;
 export const interviewsReactUrl = `${interviewsUrl}/react`;

@@ -1,6 +1,7 @@
 import {
     cicdUrl,
     cicdprojectUrl,
+    devtoolsUrl,
     hooksReactUrl,
     interviewsJavaScriptUrl,
     interviewsNodeJSUrl,
@@ -12,6 +13,7 @@ import {
     introduceReactUrl,
     layoutUrl,
     nodejsUrl,
+    prettierhuskylintstagedUrl,
     reactUrl,
 } from "@/routes/urls";
 import {
@@ -20,6 +22,7 @@ import {
     IconGenderIntergender,
     IconHomeFilled,
     IconRocket,
+    IconTool,
 } from "@tabler/icons-react";
 
 export const defaultMenus = [
@@ -27,6 +30,17 @@ export const defaultMenus = [
         path: layoutUrl,
         name: "Home",
         icon: <IconHomeFilled size={17} />,
+    },
+    {
+        path: devtoolsUrl,
+        name: "Dev Tools",
+        icon: <IconTool size={17} />,
+        routes: [
+            {
+                path: prettierhuskylintstagedUrl,
+                name: "Prettier-Husky-LintStaged",
+            },
+        ],
     },
     {
         path: interviewsUrl,

@@ -1,0 +1,17 @@
+.container {
+    .content {
+        .box {
+            margin-top: 20px;
+
+            .textcontent {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

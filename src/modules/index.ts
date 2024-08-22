@@ -10,6 +10,11 @@ export const Home = lazyLoad(
     (module) => module.Home,
 );
 
+export const PrettierHuskyLintStaged = lazyLoad(
+    () => import("./dev-tools/views/PrettierHuskyLintStaged"),
+    (module) => module.PrettierHuskyLintStaged,
+);
+
 export const InterviewOther = lazyLoad(
     () => import("./interviews/views/InterviewOther"),
     (module) => module.InterviewOther,
