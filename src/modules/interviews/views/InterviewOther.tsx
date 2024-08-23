@@ -78,7 +78,7 @@ export function InterviewOther() {
                     <TextConfig textdata={data2.data[8]} />
                     <TextConfig textdata={data2.data[9]} />
                 </div>
-                <div className={styles.box} id="heading2">
+                <div className={styles.box} id="heading3">
                     <Title level={5}>{list[2].lable}</Title>
                     <TextConfig
                         classNameText="text-title"
