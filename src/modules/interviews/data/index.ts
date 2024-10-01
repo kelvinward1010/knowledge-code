@@ -214,6 +214,7 @@ export const dataInterviewOther: IDataStatic[] = [
     {
         key: "heading2",
         data: [
+            "Bất đồng bộ (asynchronous) trong JavaScript là một khái niệm quan trọng giúp xử lý các tác vụ mà không làm gián đoạn luồng chính của chương trình. Điều này đặc biệt hữu ích khi bạn cần thực hiện các tác vụ tốn thời gian như gọi API, đọc/ghi file, hoặc truy vấn cơ sở dữ liệu.",
             "Trong JavaScript, có ba cách phổ biến để xử lý bất đồng bộ: Callback, Promise, và Async/Await. Dưới đây là một cái nhìn tổng quan về từng phương pháp:",
             "1. Callback",
             "Callback là một hàm được truyền vào như một tham số của một hàm khác và sẽ được gọi khi hàm đó hoàn thành",

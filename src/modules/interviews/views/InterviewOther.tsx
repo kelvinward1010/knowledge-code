@@ -16,7 +16,7 @@ const list = [
     },
     {
         key: "heading2",
-        lable: "2. Các cách xử lý bất đồng bộ trong JS(TS)",
+        lable: "2. Bất đồng bộ là gì? Các cách xử lý bất đồng bộ trong JS(TS)",
     },
     {
         key: "heading3",
@@ -68,7 +68,10 @@ export function InterviewOther() {
                         classNameText="text-title"
                         textdata={data2.data[0]}
                     />
-                    <TextConfig textdata={data2.data[1]} />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data2.data[1]}
+                    />
                     <TextConfig textdata={data2.data[2]} />
                     <TextConfig textdata={data2.data[3]} />
                     <TextConfig textdata={data2.data[4]} />
@@ -77,6 +80,7 @@ export function InterviewOther() {
                     <TextConfig textdata={data2.data[7]} />
                     <TextConfig textdata={data2.data[8]} />
                     <TextConfig textdata={data2.data[9]} />
+                    <TextConfig textdata={data2.data[10]} />
                 </div>
                 <div className={styles.box} id="heading3">
                     <Title level={5}>{list[2].lable}</Title>
