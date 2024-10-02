@@ -214,22 +214,6 @@ export const dataInterviewOther: IDataStatic[] = [
     {
         key: "heading2",
         data: [
-            "Bất đồng bộ (asynchronous) trong JavaScript là một khái niệm quan trọng giúp xử lý các tác vụ mà không làm gián đoạn luồng chính của chương trình. Điều này đặc biệt hữu ích khi bạn cần thực hiện các tác vụ tốn thời gian như gọi API, đọc/ghi file, hoặc truy vấn cơ sở dữ liệu.",
-            "Trong JavaScript, có ba cách phổ biến để xử lý bất đồng bộ: Callback, Promise, và Async/Await. Dưới đây là một cái nhìn tổng quan về từng phương pháp:",
-            "1. Callback",
-            "Callback là một hàm được truyền vào như một tham số của một hàm khác và sẽ được gọi khi hàm đó hoàn thành",
-            "Ưu điểm: Đơn giản và dễ hiểu. Nhược điểm: Dễ dẫn đến “callback hell” khi có nhiều callback lồng nhau.",
-            "2. Promise",
-            "Promise là một đối tượng đại diện cho một giá trị có thể có ngay bây giờ, hoặc trong tương lai, hoặc không bao giờ có",
-            "Ưu điểm: Giúp tránh “callback hell” và dễ đọc hơn. Nhược điểm: Cần hiểu rõ về cách hoạt động của Promise.",
-            "3. Async/Await",
-            "Async/Await là cú pháp mới hơn, giúp viết mã bất đồng bộ trông giống như mã đồng bộ",
-            "Ưu điểm: Dễ đọc và viết hơn, xử lý lỗi dễ dàng hơn. Nhược điểm: Cần hiểu rõ về Promise vì Async/Await dựa trên Promise.",
-        ],
-    },
-    {
-        key: "heading3",
-        data: [
             "SQL và NoSQL là hai loại cơ sở dữ liệu phổ biến, mỗi loại có những đặc điểm và ứng dụng riêng. Dưới đây là một số điểm khác biệt chính giữa chúng:",
             "SQL (Structured Query Language)",
             "1. Cấu trúc: SQL là cơ sở dữ liệu quan hệ, dữ liệu được tổ chức trong các bảng với hàng và cột. Mỗi bảng có một cấu trúc cố định (schema) xác định trước.",
@@ -246,6 +230,42 @@ export const dataInterviewOther: IDataStatic[] = [
             "Tóm tắt:",
             "SQL: Cấu trúc cố định, nhất quán cao, mở rộng theo chiều dọc, phù hợp với dữ liệu có cấu trúc.",
             "NoSQL: Cấu trúc linh hoạt, nhất quán cuối cùng, mở rộng theo chiều ngang, phù hợp với dữ liệu không có cấu trúc.",
+        ],
+    },
+];
+
+export const dataInterviewJSTS: IDataStatic[] = [
+    {
+        key: "heading1",
+        data: [
+            "1. Var:",
+            "- Scope: var có phạm vi toàn cục (global scope) hoặc phạm vi hàm (function scope). Điều này có nghĩa là biến được khai báo bằng var có thể được truy cập từ bất kỳ đâu trong hàm hoặc toàn bộ chương trình nếu khai báo ngoài hàm.",
+            "- Hoisting: Biến var được hoisting, nghĩa là chúng được đưa lên đầu phạm vi trước khi thực thi mã. Tuy nhiên, giá trị của chúng sẽ là undefined cho đến khi dòng mã gán giá trị được thực thi.",
+            "- Redeclaration: Có thể khai báo lại biến var trong cùng một phạm vi mà không gây lỗi.",
+            "2. Let:",
+            "- Scope: let có phạm vi khối (block scope), nghĩa là biến chỉ tồn tại trong khối mã (block) mà nó được khai báo, ví dụ như trong một cặp dấu ngoặc nhọn {}.",
+            "- Hoisting: Biến let cũng được hoisting nhưng không được khởi tạo. Điều này có nghĩa là bạn không thể sử dụng biến let trước khi nó được khai báo.",
+            "- Redeclaration: Không thể khai báo lại biến let trong cùng một phạm vi. Tuy nhiên, bạn có thể gán lại giá trị cho biến let.",
+            "3. Const:",
+            "- Scope: Giống như let, const cũng có phạm vi khối (block scope).",
+            "- Hoisting: Biến const cũng được hoisting nhưng không được khởi tạo, tương tự như let.",
+            "- Redeclaration: Không thể khai báo lại hoặc gán lại giá trị cho biến const sau khi nó đã được khai báo. Biến const phải được khởi tạo ngay khi khai báo.",
+        ],
+    },
+    {
+        key: "heading2",
+        data: [
+            "Bất đồng bộ (asynchronous) trong JavaScript là một khái niệm quan trọng giúp xử lý các tác vụ mà không làm gián đoạn luồng chính của chương trình. Điều này đặc biệt hữu ích khi bạn cần thực hiện các tác vụ tốn thời gian như gọi API, đọc/ghi file, hoặc truy vấn cơ sở dữ liệu.",
+            "Trong JavaScript, có ba cách phổ biến để xử lý bất đồng bộ: Callback, Promise, và Async/Await. Dưới đây là một cái nhìn tổng quan về từng phương pháp:",
+            "1. Callback",
+            "Callback là một hàm được truyền vào như một tham số của một hàm khác và sẽ được gọi khi hàm đó hoàn thành",
+            "Ưu điểm: Đơn giản và dễ hiểu. Nhược điểm: Dễ dẫn đến “callback hell” khi có nhiều callback lồng nhau.",
+            "2. Promise",
+            "Promise là một đối tượng đại diện cho một giá trị có thể có ngay bây giờ, hoặc trong tương lai, hoặc không bao giờ có",
+            "Ưu điểm: Giúp tránh “callback hell” và dễ đọc hơn. Nhược điểm: Cần hiểu rõ về cách hoạt động của Promise.",
+            "3. Async/Await",
+            "Async/Await là cú pháp mới hơn, giúp viết mã bất đồng bộ trông giống như mã đồng bộ",
+            "Ưu điểm: Dễ đọc và viết hơn, xử lý lỗi dễ dàng hơn. Nhược điểm: Cần hiểu rõ về Promise vì Async/Await dựa trên Promise.",
         ],
     },
 ];

@@ -3,7 +3,7 @@ import {
     cicdprojectUrl,
     devtoolsUrl,
     hooksReactUrl,
-    interviewsJavaScriptUrl,
+    interviewsJSTSUrl,
     interviewsNodeJSUrl,
     interviewsOtherUrl,
     interviewsReactUrl,
@@ -59,8 +59,8 @@ export const defaultMenus = [
                 name: "Languages",
                 routes: [
                     {
-                        path: interviewsJavaScriptUrl,
-                        name: "JavaScript",
+                        path: interviewsJSTSUrl,
+                        name: "JS/TS",
                     },
                 ],
             },

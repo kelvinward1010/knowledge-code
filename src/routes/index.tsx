@@ -2,7 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
     cicdprojectUrl,
     hooksReactUrl,
-    interviewsJavaScriptUrl,
+    interviewsJSTSUrl,
     interviewsNodeJSUrl,
     interviewsOtherUrl,
     interviewsReactUrl,
@@ -18,7 +18,7 @@ import {
     CICDProject,
     Home,
     HooksReact,
-    InterviewJavaScript,
+    InterviewJSTS,
     InterviewNodeJS,
     InterviewOther,
     InterviewReact,
@@ -83,8 +83,8 @@ export const routerConfig = createBrowserRouter([
                 element: <InterviewNodeJS />,
             },
             {
-                path: interviewsJavaScriptUrl,
-                element: <InterviewJavaScript />,
+                path: interviewsJSTSUrl,
+                element: <InterviewJSTS />,
             },
             {
                 path: introduceCicdUrl,
