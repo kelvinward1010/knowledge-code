@@ -268,4 +268,17 @@ export const dataInterviewJSTS: IDataStatic[] = [
             "Ưu điểm: Dễ đọc và viết hơn, xử lý lỗi dễ dàng hơn. Nhược điểm: Cần hiểu rõ về Promise vì Async/Await dựa trên Promise.",
         ],
     },
+    {
+        key: "heading3",
+        data: [
+            "ES5 (ECMAScript 5) và ES6 (ECMAScript 6) - còn được gọi là ES2015 - có nhiều điểm khác biệt quan trọng mà đã cải thiện rất nhiều khả năng và cú pháp của JavaScript. Dưới đây là một số điểm khác biệt chính:",
+            "1. Arrow Functions: Trong ES6, bạn có thể sử dụng arrow functions để viết các hàm gọn gàng hơn.",
+            "2. let và const: ES6 giới thiệu let và const để khai báo biến với phạm vi khối.",
+            "3. Template Literals: ES6 cho phép sử dụng template literals để dễ dàng chèn biến và biểu thức vào chuỗi.",
+            "4. Classes: ES6 giới thiệu cú pháp class giúp việc tạo và kế thừa các class dễ dàng hơn.",
+            "5. Modules: ES6 hỗ trợ import và export modules.",
+            "6. Destructuring Assignment: ES6 giới thiệu cú pháp destructuring để trích xuất các giá trị từ mảng và đối tượng.",
+            "7. Promises: ES6 giới thiệu Promises để xử lý các tác vụ bất đồng bộ một cách hiệu quả hơn.",
+        ],
+    },
 ];
