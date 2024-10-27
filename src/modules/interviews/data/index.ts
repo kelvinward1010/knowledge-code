@@ -163,6 +163,8 @@ export const dataInterviewNodejs: IDataStatic[] = [
         key: "heading1",
         data: [
             "NodeJS là một mã nguồn được xây dựng trên Javascript Engine (V8 Engine). NodeJS cũng được biết đến như một nền tảng (Platform) được phát triển năm 2009 bởi Ryan Dahl. NodeJS dựa trên Chrome Javascript runtime phát triển các ứng dụng web, tận dụng kiến trúc hướng sự kiện (event-driven), mô hình non-blocking I/O để tạo ra các ứng dụng nhẹ và hiệu quả. Những ứng dụng Node.js được viết bằng Javascript, chúng có thể chạy trong môi trường NodeJS trên hệ điều hành Window, Linux,...",
+            "I/O bất đồng bộ: Node.js sử dụng một single-threaded event loop để quản lý các yêu cầu I/O. Điều này giúp tránh việc blocking và cho phép xử lý nhiều yêu cầu đồng thời.",
+            "Event-driven: Node.js sử dụng các events và callbacks để xử lý các tác vụ bất đồng bộ. Khi một sự kiện xảy ra, một callback function sẽ được gọi để xử lý sự kiện đó.",
         ],
     },
     {
@@ -186,6 +188,36 @@ export const dataInterviewNodejs: IDataStatic[] = [
             "3. URL: Địa chỉ URL đại diện cho tài nguyên.",
             "4. Status Codes: Mã trạng thái HTTP để thông báo kết quả của yêu cầu (ví dụ: 200 OK, 404 Not Found).",
             "RESTful API thường trả về dữ liệu dưới dạng JSON hoặc XML, giúp dễ dàng tích hợp và sử dụng trong các ứng dụng web và di động.",
+        ],
+    },
+    {
+        key: "heading4",
+        data: [
+            "Express.js là một web application framework cho Node.js, giúp xây dựng các ứng dụng web và API một cách nhanh chóng và dễ dàng.",
+            "Routing: Express cung cấp một hệ thống routing mạnh mẽ để xác định các endpoint cho ứng dụng của bạn.",
+            "Middleware: Middleware là các hàm được thực hiện trong quá trình xử lý request và response. Express hỗ trợ nhiều loại middleware để xử lý các tác vụ như xác thực, parsing dữ liệu, logging, v.v.",
+        ],
+    },
+    {
+        key: "heading5",
+        data: [
+            "Quản lý database trong Node.js có thể thực hiện với nhiều loại database khác nhau như MongoDB, MySQL, PostgreSQL, v.v.",
+            "MongoDB: Là một NoSQL database, lưu trữ dữ liệu dưới dạng JSON-like documents.",
+            "MySQL/PostgreSQL: Là các relational database, lưu trữ dữ liệu dưới dạng tables.",
+        ],
+    },
+    {
+        key: "heading6",
+        data: [
+            "CORS là viết tắt của Cross-Origin Resource Sharing. Theo tiếng Việt, CORS có nghĩa là chia sẻ tài nguyên giữa các nguồn khác nhau. Đây là một cơ chế bảo mật được trình duyệt áp dụng để ngăn chặn các trang web truy cập vào tài nguyên của các trang web khác một cách tùy tiện.",
+            "CORS là một cơ chế bảo mật quan trọng trong các ứng dụng web hiện đại. Hiểu rõ về CORS và cách cấu hình nó trong Node.js giúp bạn xây dựng các API an toàn và tương thích với các ứng dụng frontend.",
+            "Tại sao cần CORS?",
+            "- Bảo mật: Ngăn chặn các cuộc tấn công cross-site scripting (XSS) và các loại tấn công khác.",
+            "- Bảo vệ dữ liệu: Ngăn chặn việc truy cập trái phép vào dữ liệu nhạy cảm.",
+            "CORS hoạt động như thế nào?",
+            "- Khi một trình duyệt thực hiện một yêu cầu HTTP đến một nguồn khác (ví dụ: một API), nó sẽ kiểm tra các tiêu đề HTTP để xác định xem yêu cầu đó có được phép hay không. Nếu nguồn đích đã cấu hình để cho phép truy cập từ nguồn gốc của yêu cầu, thì yêu cầu sẽ được thực hiện. Ngược lại, yêu cầu sẽ bị chặn và trình duyệt sẽ báo lỗi.",
+            "CORS trong Node.js",
+            "Trong Node.js, chúng ta thường sử dụng các framework như Express để xây dựng các API. Để cho phép các ứng dụng frontend (ví dụ: React, Angular) truy cập vào API của chúng ta, chúng ta cần cấu hình CORS.",
         ],
     },
 ];
@@ -279,6 +311,62 @@ export const dataInterviewJSTS: IDataStatic[] = [
             "5. Modules: ES6 hỗ trợ import và export modules.",
             "6. Destructuring Assignment: ES6 giới thiệu cú pháp destructuring để trích xuất các giá trị từ mảng và đối tượng.",
             "7. Promises: ES6 giới thiệu Promises để xử lý các tác vụ bất đồng bộ một cách hiệu quả hơn.",
+        ],
+    },
+    {
+        key: "heading4",
+        data: [
+            "Event loop là một cơ chế cốt lõi trong JavaScript, cho phép ngôn ngữ này xử lý các tác vụ không đồng bộ (asynchronous) một cách hiệu quả. Nhờ event loop, JavaScript có thể thực hiện nhiều tác vụ cùng một lúc mà không bị chặn, giúp ứng dụng web trở nên mượt mà và đáp ứng nhanh hơn.",
+            "Cách thức hoạt động:",
+            "1. Call Stack:",
+            "- Khi bạn chạy một đoạn code JavaScript, các hàm sẽ được đẩy vào Call Stack theo thứ tự gọi.",
+            "- Call Stack hoạt động theo nguyên tắc LIFO (Last In, First Out): hàm nào được gọi sau sẽ được thực hiện trước.",
+            "2. Web APIs:",
+            "- Các tác vụ không đồng bộ như setTimeout, fetch API, DOM events sẽ được gửi đến Web APIs để xử lý.",
+            "- Trong khi Web APIs đang xử lý, Call Stack sẽ tiếp tục thực hiện các tác vụ khác nếu có.",
+            "3. Callback Queue:",
+            "- Khi Web APIs hoàn thành công việc, callback function của chúng sẽ được đưa vào Callback Queue.",
+            "4. Event Loop:",
+            "- Event Loop sẽ liên tục kiểm tra xem Call Stack có rỗng hay không.",
+            "- Nếu Call Stack rỗng, Event Loop sẽ lấy một callback từ Callback Queue và đẩy vào Call Stack để thực hiện.",
+        ],
+    },
+    {
+        key: "heading5",
+        data: [
+            "Trong JavaScript, this là một từ khóa đặc biệt dùng để tham chiếu đến đối tượng hiện tại đang thực thi hàm. Nói cách khác, this sẽ luôn trỏ đến đối tượng mà hàm đó được gọi trên đó.",
+            "Giá trị của this thay đổi tùy thuộc vào ngữ cảnh mà hàm được gọi. Đây là một trong những khái niệm quan trọng nhất và cũng là một trong những khái niệm dễ gây nhầm lẫn nhất trong JavaScript.",
+            "Các trường hợp thường gặp của this:",
+            "Trong hàm: Khi một hàm được gọi như một phương thức của một đối tượng, this sẽ trỏ đến đối tượng đó.",
+            "Trong hàm constructor: Bên trong một hàm constructor, this trỏ đến đối tượng đang được tạo.",
+            "Trong hàm thông thường: Khi một hàm được gọi đơn giản, không liên kết với bất kỳ đối tượng nào, this sẽ trỏ đến đối tượng toàn cục (window trong trình duyệt).",
+            "Trong các hàm callback: Giá trị của this trong các hàm callback phụ thuộc vào cách hàm đó được gọi.",
+        ],
+    },
+    {
+        key: "heading6",
+        data: [
+            "Ngữ cảnh (context): Trong JavaScript, this luôn ám chỉ đến đối tượng đang sở hữu hàm hiện tại. Ngữ cảnh có thể thay đổi tùy thuộc vào cách gọi hàm.",
+            "Bind, call, apply: Đây là 3 phương thức được kế thừa từ đối tượng Function.prototype, cho phép chúng ta điều khiển ngữ cảnh this của một hàm và cách truyền đối số vào hàm đó.",
+        ],
+    },
+    {
+        key: "heading7",
+        data: [
+            "Prototype là một khái niệm cốt lõi trong JavaScript, nó đóng vai trò quan trọng trong việc tạo ra các đối tượng và thực hiện cơ chế kế thừa trong ngôn ngữ này. Nói một cách đơn giản, prototype là một đối tượng mà các đối tượng khác có thể kế thừa các thuộc tính và phương thức từ nó.",
+            "Tại sao Prototype lại quan trọng?",
+            "Kế thừa: Prototype cho phép JavaScript thực hiện cơ chế kế thừa mà không cần sử dụng từ khóa class như trong các ngôn ngữ lập trình hướng đối tượng khác.",
+            "Tái sử dụng mã: Bằng cách tạo ra các prototype chung, chúng ta có thể tái sử dụng các thuộc tính và phương thức cho nhiều đối tượng khác nhau.",
+            "Định hình cấu trúc của đối tượng: Prototype giúp định nghĩa cấu trúc và hành vi của các đối tượng trong ứng dụng.",
+            "Cơ chế hoạt động của Prototype",
+            "Mỗi đối tượng đều có một liên kết đến prototype của nó: Khi bạn tạo một đối tượng, nó sẽ có một thuộc tính nội bộ ([[Prototype]]) trỏ đến một đối tượng khác, đó chính là prototype của nó.",
+            "Khi truy cập một thuộc tính hoặc phương thức: Khi bạn truy cập một thuộc tính hoặc gọi một phương thức của một đối tượng, JavaScript sẽ tìm kiếm thuộc tính đó trong chính đối tượng đó trước. Nếu không tìm thấy, nó sẽ tiếp tục tìm kiếm trong prototype của đối tượng đó, rồi đến prototype của prototype, và cứ thế cho đến khi tìm thấy hoặc đến đối tượng null.",
+        ],
+    },
+    {
+        key: "heading8",
+        data: [
+            "Closure là một khái niệm quan trọng trong JavaScript, nó cho phép một hàm truy cập và sử dụng các biến bên ngoài phạm vi của nó, ngay cả khi hàm đó đã được trả về. Nói cách khác, closure là một hàm cùng với các biến mà nó 'nhớ' lại, ngay cả khi hàm tạo ra nó đã kết thúc việc thực thi.",
         ],
     },
 ];
