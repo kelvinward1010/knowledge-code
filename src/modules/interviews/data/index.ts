@@ -403,6 +403,32 @@ export const dataInterviewJSTS: IDataStatic[] = [
             "- Điều khiển luồng thực thi: Hàm callback cho phép chúng ta xác định thứ tự thực hiện các đoạn mã, đặc biệt hữu ích khi làm việc với các sự kiện.",
         ],
     },
+    {
+        key: "heading11",
+        data: [
+            "Hoisting là một cơ chế đặc biệt của JavaScript, trong đó các khai báo biến và hàm được 'nâng' lên đầu phạm vi của chúng (function scope hoặc global scope) trước khi code được thực thi. Tuy nhiên, chỉ có phần khai báo được nâng lên, việc gán giá trị vẫn giữ nguyên vị trí ban đầu.",
+            "Lưu ý:",
+            "- Chỉ khai báo được nâng: Như đã nói ở trên, chỉ phần khai báo biến và hàm được nâng lên, việc gán giá trị vẫn giữ nguyên vị trí.",
+            "- Không áp dụng cho let và const: Hoisting chỉ áp dụng cho biến khai báo bằng var. Với let và const, nếu bạn truy cập biến trước khi khai báo, sẽ xảy ra lỗi ReferenceError.",
+            "- Function declaration và function expression: Cả function declaration và function expression đều được hoisting, nhưng cách hoạt động có chút khác biệt.",
+        ],
+    },
+    {
+        key: "heading12",
+        data: [
+            "Prototype là gì?",
+            "Trong JavaScript, prototype là một đối tượng đặc biệt liên kết với một đối tượng khác. Nó đóng vai trò như một khuôn mẫu, cung cấp các thuộc tính và phương thức mặc định cho các đối tượng được tạo ra từ nó.",
+            "- Mỗi đối tượng trong JavaScript đều có một liên kết đến một prototype.",
+            "- Prototype này chứa các thuộc tính và phương thức mà các đối tượng có thể chia sẻ.",
+            "- Khi bạn truy cập một thuộc tính hoặc phương thức của một đối tượng, JavaScript sẽ tìm kiếm nó trong đối tượng đó trước. Nếu không tìm thấy, nó sẽ tiếp tục tìm kiếm trong prototype của đối tượng đó.",
+            "Prototype Chain là gì?",
+            "Prototype chain là một chuỗi các prototype liên kết với nhau. Khi bạn truy cập một thuộc tính hoặc phương thức của một đối tượng, JavaScript sẽ lần lượt tìm kiếm trong:",
+            "- Đối tượng hiện tại: Nếu tìm thấy, trả về giá trị.",
+            "- Prototype của đối tượng hiện tại: Nếu không tìm thấy ở bước 1, tiếp tục tìm ở đây.",
+            "- Prototype của prototype: Nếu vẫn chưa tìm thấy, tiếp tục tìm ở đây.",
+            "- Và cứ thế cho đến khi tìm thấy hoặc đến cuối chuỗi.",
+        ],
+    },
 ];
 
 export const dataInterviewHTMLCSS: IDataStatic[] = [

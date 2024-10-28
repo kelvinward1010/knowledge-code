@@ -54,6 +54,14 @@ const list: { key: string; lable: string }[] = [
         key: "heading10",
         lable: "10.  Hàm Callback trong JavaScript",
     },
+    {
+        key: "heading11",
+        lable: "11. Hoisting trong JavaScript",
+    },
+    {
+        key: "heading12",
+        lable: "12. Prototype và Prototype Chain trong JavaScript",
+    },
 ];
 
 export function InterviewJSTS() {
@@ -68,6 +76,8 @@ export function InterviewJSTS() {
     const data8: IDataStatic = takeData("heading8", dataInterviewJSTS);
     const data9: IDataStatic = takeData("heading9", dataInterviewJSTS);
     const data10: IDataStatic = takeData("heading10", dataInterviewJSTS);
+    const data11: IDataStatic = takeData("heading11", dataInterviewJSTS);
+    const data12: IDataStatic = takeData("heading12", dataInterviewJSTS);
 
     return (
         <div className={styles.container}>
@@ -204,6 +214,37 @@ export function InterviewJSTS() {
                     <TextConfig textdata={data10.data[1]} />
                     <TextConfig textdata={data10.data[2]} />
                     <TextConfig textdata={data10.data[3]} />
+                </div>
+                <div className={styles.box} id="heading11">
+                    <Title level={5}>{list[10].lable}</Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data11.data[0]}
+                    />
+                    <TextConfig textdata={data11.data[1]} />
+                    <TextConfig textdata={data11.data[2]} />
+                    <TextConfig textdata={data11.data[3]} />
+                    <TextConfig textdata={data11.data[4]} />
+                </div>
+                <div className={styles.box} id="heading12">
+                    <Title level={5}>{list[11].lable}</Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data12.data[0]}
+                    />
+                    <TextConfig textdata={data12.data[1]} />
+                    <TextConfig textdata={data12.data[2]} />
+                    <TextConfig textdata={data12.data[3]} />
+                    <TextConfig textdata={data12.data[4]} />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data12.data[5]}
+                    />
+                    <TextConfig textdata={data12.data[6]} />
+                    <TextConfig textdata={data12.data[7]} />
+                    <TextConfig textdata={data12.data[8]} />
+                    <TextConfig textdata={data12.data[9]} />
+                    <TextConfig textdata={data12.data[10]} />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}
