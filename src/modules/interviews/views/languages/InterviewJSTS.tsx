@@ -50,6 +50,10 @@ const list: { key: string; lable: string }[] = [
         key: "heading9",
         lable: "9.  Sự khác biệt giữa null và undefined?",
     },
+    {
+        key: "heading10",
+        lable: "10.  Hàm Callback trong JavaScript",
+    },
 ];
 
 export function InterviewJSTS() {
@@ -63,6 +67,7 @@ export function InterviewJSTS() {
     const data7: IDataStatic = takeData("heading7", dataInterviewJSTS);
     const data8: IDataStatic = takeData("heading8", dataInterviewJSTS);
     const data9: IDataStatic = takeData("heading9", dataInterviewJSTS);
+    const data10: IDataStatic = takeData("heading10", dataInterviewJSTS);
 
     return (
         <div className={styles.container}>
@@ -189,6 +194,16 @@ export function InterviewJSTS() {
                     <Title level={5}>{list[8].lable}</Title>
                     <TextConfig textdata={data9.data[0]} />
                     <TextConfig textdata={data9.data[1]} />
+                </div>
+                <div className={styles.box} id="heading10">
+                    <Title level={5}>{list[9].lable}</Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data10.data[0]}
+                    />
+                    <TextConfig textdata={data10.data[1]} />
+                    <TextConfig textdata={data10.data[2]} />
+                    <TextConfig textdata={data10.data[3]} />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}

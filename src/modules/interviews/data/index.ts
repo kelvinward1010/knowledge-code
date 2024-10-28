@@ -394,6 +394,15 @@ export const dataInterviewJSTS: IDataStatic[] = [
             "undefined: Một biến chưa được gán giá trị.",
         ],
     },
+    {
+        key: "heading10",
+        data: [
+            "Hàm callback (callback function) trong JavaScript là một hàm được truyền vào một hàm khác như một đối số, và sẽ được gọi lại sau khi hàm bên ngoài hoàn thành một tác vụ nào đó hoặc xảy ra một sự kiện nào đó.",
+            "Tại sao chúng ta cần hàm callback?",
+            "- Tính bất đồng bộ (Asynchronous): JavaScript là ngôn ngữ đơn luồng, nhưng nhiều tác vụ như đọc file, gửi yêu cầu đến server, xử lý sự kiện... lại mất thời gian. Hàm callback giúp đảm bảo rằng mã của chúng ta sẽ được thực thi sau khi các tác vụ này hoàn thành, mà không bị chặn.",
+            "- Điều khiển luồng thực thi: Hàm callback cho phép chúng ta xác định thứ tự thực hiện các đoạn mã, đặc biệt hữu ích khi làm việc với các sự kiện.",
+        ],
+    },
 ];
 
 export const dataInterviewHTMLCSS: IDataStatic[] = [
