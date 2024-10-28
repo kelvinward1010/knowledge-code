@@ -35,6 +35,10 @@ const list = [
         key: "heading6",
         lable: "6. CORS trong Node.js: Giải thích chi tiết",
     },
+    {
+        key: "heading7",
+        lable: "7. Xác thực và Ủy quyền trong Ứng dụng Full-stack JavaScript",
+    },
 ];
 
 export function InterviewNodeJS() {
@@ -45,6 +49,7 @@ export function InterviewNodeJS() {
     const data4: IDataStatic = takeData("heading4", dataInterviewNodejs);
     const data5: IDataStatic = takeData("heading5", dataInterviewNodejs);
     const data6: IDataStatic = takeData("heading6", dataInterviewNodejs);
+    const data7: IDataStatic = takeData("heading7", dataInterviewNodejs);
 
     return (
         <div className={styles.container}>
@@ -120,6 +125,27 @@ export function InterviewNodeJS() {
                     <TextConfig textdata={data6.data[7]} />
                     <TextConfig textdata={data6.data[8]} />
                     <img src={CorsExplain} alt="" />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading7">
+                        {list[6].lable}
+                    </Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data7.data[0]}
+                    />
+                    <TextConfig textdata={data7.data[1]} />
+                    <TextConfig textdata={data7.data[2]} />
+                    <TextConfig textdata={data7.data[3]} />
+                    <TextConfig textdata={data7.data[4]} />
+                    <TextConfig textdata={data7.data[5]} />
+                    <TextConfig textdata={data7.data[6]} />
+                    <TextConfig textdata={data7.data[7]} />
+                    <TextConfig textdata={data7.data[8]} />
+                    <TextConfig textdata={data7.data[9]} />
+                    <TextConfig textdata={data7.data[10]} />
+                    <TextConfig textdata={data7.data[11]} />
+                    <TextConfig textdata={data7.data[12]} />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}

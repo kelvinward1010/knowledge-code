@@ -220,6 +220,24 @@ export const dataInterviewNodejs: IDataStatic[] = [
             "Trong Node.js, chúng ta thường sử dụng các framework như Express để xây dựng các API. Để cho phép các ứng dụng frontend (ví dụ: React, Angular) truy cập vào API của chúng ta, chúng ta cần cấu hình CORS.",
         ],
     },
+    {
+        key: "heading7",
+        data: [
+            "Xác thực (Authentication) và ủy quyền (Authorization) là hai khái niệm cơ bản và quan trọng trong bảo mật ứng dụng web. Chúng đảm bảo rằng chỉ những người dùng được phép mới có thể truy cập và tương tác với dữ liệu của ứng dụng.",
+            "Xác thực: Ai là bạn?",
+            "Xác thực là quá trình xác minh danh tính của người dùng. Điều này thường được thực hiện bằng cách so sánh thông tin mà người dùng cung cấp (ví dụ: tên đăng nhập, mật khẩu) với thông tin đã được lưu trữ trong cơ sở dữ liệu.",
+            "Các phương thức xác thực phổ biến:",
+            "- Xác thực dựa trên mật khẩu: Người dùng nhập tên đăng nhập và mật khẩu để đăng nhập. Mật khẩu thường được mã hóa bằng các thuật toán một chiều để đảm bảo an toàn.",
+            "- Xác thực dựa trên token: Sau khi xác thực thành công, hệ thống sẽ cấp cho người dùng một token (một chuỗi ký tự đặc biệt). Token này sẽ được gửi kèm trong các yêu cầu tiếp theo để xác minh danh tính.",
+            "- OAuth 2.0: Một giao thức cho phép các ứng dụng bên thứ ba truy cập vào thông tin của người dùng trên các dịch vụ khác (ví dụ: Google, Facebook).",
+            "Ủy quyền: Bạn được phép làm gì?",
+            "Ủy quyền là quá trình xác định xem một người dùng đã được cấp phép để thực hiện một hành động cụ thể hay chưa.",
+            "Các phương pháp ủy quyền phổ biến:",
+            "- Kiểm soát truy cập dựa trên vai trò (RBAC): Người dùng được gán vào các vai trò khác nhau (ví dụ: admin, user, guest). Mỗi vai trò sẽ được cấp phép thực hiện một số hành động nhất định.",
+            "- Kiểm soát truy cập dựa trên quyền hạn (PBAC): Mỗi người dùng hoặc nhóm người dùng sẽ được cấp phép trực tiếp cho các hành động cụ thể.",
+            "- Kiểm soát truy cập dựa trên thuộc tính (ABAC): Quyền hạn được xác định dựa trên các thuộc tính của người dùng, tài nguyên và môi trường.",
+        ],
+    },
 ];
 
 export const dataInterviewOther: IDataStatic[] = [
