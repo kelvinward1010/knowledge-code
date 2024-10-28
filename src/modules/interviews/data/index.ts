@@ -369,4 +369,66 @@ export const dataInterviewJSTS: IDataStatic[] = [
             "Closure là một khái niệm quan trọng trong JavaScript, nó cho phép một hàm truy cập và sử dụng các biến bên ngoài phạm vi của nó, ngay cả khi hàm đó đã được trả về. Nói cách khác, closure là một hàm cùng với các biến mà nó 'nhớ' lại, ngay cả khi hàm tạo ra nó đã kết thúc việc thực thi.",
         ],
     },
+    {
+        key: "heading9",
+        data: [
+            "null: Một giá trị được gán cho một biến để biểu thị rằng biến đó không có giá trị nào.",
+            "undefined: Một biến chưa được gán giá trị.",
+        ],
+    },
+];
+
+export const dataInterviewHTMLCSS: IDataStatic[] = [
+    {
+        key: "heading1",
+        data: [
+            "CSS Box Model là một mô hình cơ bản dùng để xác định kích thước và vị trí của các phần tử trên trang web. Mỗi phần tử HTML được coi như một hộp (box), và hộp này bao gồm các phần sau:",
+            "- Content: Nội dung bên trong hộp (text, hình ảnh, ...)",
+            "- Padding: Khoảng cách giữa nội dung và border",
+            "- Border: Đường viền bao quanh hộp",
+            "- Margin: Khoảng cách giữa hộp và các hộp khác",
+        ],
+    },
+    {
+        key: "heading2",
+        data: [
+            "Flexbox và Grid layout là hai công cụ mạnh mẽ để tạo ra các bố cục phức tạp và linh hoạt trên trang web. Chúng cho phép bạn sắp xếp các phần tử theo nhiều cách khác nhau, đáp ứng được các thiết bị có kích thước màn hình khác nhau.",
+            "Flexbox",
+            "- Dùng để: Sắp xếp các phần tử theo một chiều (dọc hoặc ngang).",
+            "- Ưu điểm: Đơn giản, dễ học, phù hợp với các layout một chiều.",
+            "- Các thuộc tính chính:",
+            "+ display: flex;",
+            "+ flex-direction: Xác định hướng của container",
+            "+ justify-content: Căn chỉnh các phần tử theo trục chính",
+            "+ align-items: Căn chỉnh các phần tử theo trục phụ",
+            "Grid layout",
+            "- Dùng để: Tạo các bố cục hai chiều phức tạp.",
+            "- Ưu điểm: Linh hoạt, có thể tạo ra các lưới có nhiều cột và hàng.",
+            "- Các thuộc tính chính:",
+            "+ display: grid;",
+            "+ grid-template-columns: Xác định kích thước cột của grid",
+            "+ grid-template-rows: Xác định kích thước hàng của grid",
+            "+ grid-gap: Tạo khoảng cách giữa các ô",
+        ],
+    },
+    {
+        key: "heading3",
+        data: [
+            "HTML Semantic Elements (các phần tử ngữ nghĩa HTML) là những phần tử HTML được thiết kế để mang ý nghĩa đặc biệt, mô tả rõ ràng về mục đích của chúng trong một trang web. Thay vì chỉ đơn thuần tạo ra các khối nội dung bằng các phần tử chung chung như <div> và <span>, các phần tử ngữ nghĩa giúp chúng ta xây dựng một cấu trúc HTML có ý nghĩa hơn, dễ hiểu hơn cho cả trình duyệt, công cụ tìm kiếm và các nhà phát triển khác.",
+            "Ví dụ về các phần tử ngữ nghĩa:",
+            "- <header>: Đánh dấu phần đầu trang.",
+            "- <nav>: Đánh dấu phần menu trang.",
+            "- <main>: Đánh dấu phần nội dung chính của trang.",
+            "- <section>: Đánh dấu phần nhóm phần tử.",
+            "- <article>: Đánh dấu một nội dung độc lập có thể đứng một mình",
+            "- <aside>: Đánh dấu nội dung bên lề, thông tin bổ sung.",
+            "- <footer>: Đánh dấu phần chân trang.",
+            "Tại sao sử dụng HTML Semantic Elements?",
+            "1. Cải thiện khả năng đọc hiểu code",
+            "2. Tăng cường SEO",
+            "3. Tạo ra các trang web tiếp cận được tốt hơn",
+            "4. Dễ dàng bảo trì và mở rộng",
+            "5. Tạo ra các ứng dụng web hiện đại",
+        ],
+    },
 ];

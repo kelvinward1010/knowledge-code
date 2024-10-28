@@ -46,6 +46,10 @@ const list: { key: string; lable: string }[] = [
         key: "heading8",
         lable: "8. Closure trong JavaScript là gì?",
     },
+    {
+        key: "heading9",
+        lable: "9.  Sự khác biệt giữa null và undefined?",
+    },
 ];
 
 export function InterviewJSTS() {
@@ -58,6 +62,7 @@ export function InterviewJSTS() {
     const data6: IDataStatic = takeData("heading6", dataInterviewJSTS);
     const data7: IDataStatic = takeData("heading7", dataInterviewJSTS);
     const data8: IDataStatic = takeData("heading8", dataInterviewJSTS);
+    const data9: IDataStatic = takeData("heading9", dataInterviewJSTS);
 
     return (
         <div className={styles.container}>
@@ -179,6 +184,11 @@ export function InterviewJSTS() {
                     <Title level={5}>{list[7].lable}</Title>
                     <TextConfig textdata={data8.data[0]} />
                     <img src={ClosureExplain} alt="" />
+                </div>
+                <div className={styles.box} id="heading9">
+                    <Title level={5}>{list[8].lable}</Title>
+                    <TextConfig textdata={data9.data[0]} />
+                    <TextConfig textdata={data9.data[1]} />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}

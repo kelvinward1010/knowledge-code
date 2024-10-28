@@ -3,6 +3,7 @@ import {
     cicdprojectUrl,
     devtoolsUrl,
     hooksReactUrl,
+    interviewsHTMLCSSUrl,
     interviewsJSTSUrl,
     interviewsNodeJSUrl,
     interviewsOtherUrl,
@@ -47,6 +48,10 @@ export const defaultMenus = [
         name: "Interviews",
         icon: <IconGenderIntergender size={17} />,
         routes: [
+            {
+                path: interviewsHTMLCSSUrl,
+                name: "HTML/CSS",
+            },
             {
                 path: interviewsReactUrl,
                 name: "React",

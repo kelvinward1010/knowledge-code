@@ -35,6 +35,11 @@ export const InterviewJSTS = lazyLoad(
     (module) => module.InterviewJSTS,
 );
 
+export const InterviewHTMLCSS = lazyLoad(
+    () => import("./interviews/views/InterviewHTMLCSS"),
+    (module) => module.InterviewHTMLCSS,
+);
+
 export const IntroduceReact = lazyLoad(
     () => import("./react/views/IntroduceReact"),
     (module) => module.IntroduceReact,
