@@ -238,6 +238,66 @@ export const dataInterviewNodejs: IDataStatic[] = [
             "- Kiểm soát truy cập dựa trên thuộc tính (ABAC): Quyền hạn được xác định dựa trên các thuộc tính của người dùng, tài nguyên và môi trường.",
         ],
     },
+    {
+        key: "heading8",
+        data: [
+            "Khái niệm: Là cách xác định các URL khác nhau và các hành động sẽ được thực hiện khi một yêu cầu đến với URL đó.",
+            "Các phương thức HTTP: Express.js hỗ trợ đầy đủ các phương thức HTTP phổ biến như GET, POST, PUT, DELETE, PATCH.",
+        ],
+    },
+    {
+        key: "heading9",
+        data: [
+            "Khái niệm: Là các hàm được gọi trước khi đến controller hoặc sau khi controller xử lý xong.",
+            "Chức năng:",
+            "- Xác thực: Kiểm tra xem người dùng có quyền truy cập hay không.",
+            "- Parse body: Đọc dữ liệu từ body của request.",
+            "- Logging: Ghi log các request.",
+            "- Error handling: Xử lý các lỗi toàn cục.",
+            "Vị trí:",
+            "- Application-level: Áp dụng cho tất cả các request.",
+            "- Router-level: Áp dụng cho các route cụ thể.",
+            "- Error-handling: Xử lý các lỗi.",
+        ],
+    },
+    {
+        key: "heading10",
+        data: [
+            "Khái niệm: Là các hàm chứa logic xử lý chính của ứng dụng, tách biệt hoàn toàn với việc định tuyến.",
+            "Vai trò:",
+            "- Gọi đến model để truy xuất dữ liệu.",
+            "- Thực hiện các phép tính logic.",
+            "- Trả về kết quả cho view.",
+        ],
+    },
+    {
+        key: "heading11",
+        data: [
+            "Khái niệm: Là phần đại diện cho dữ liệu trong database.",
+            "Chức năng:",
+            "- Truy xuất, cập nhật, xóa dữ liệu.",
+            "- Thường sử dụng ORM để tương tác với database.",
+            "ORM (Object-Relational Mapping): Là một kỹ thuật giúp ánh xạ các đối tượng trong ứng dụng với các bảng trong database.",
+        ],
+    },
+    {
+        key: "heading12",
+        data: [
+            "Khái niệm: Là công cụ giúp tạo ra các trang HTML động từ dữ liệu.",
+            "Lợi ích:",
+            "- Tách biệt logic và giao diện.",
+            "- Dễ dàng quản lý template.",
+            "Các template engine phổ biến: EJS, Pug, Handlebars.",
+        ],
+    },
+    {
+        key: "heading13",
+        data: [
+            "Xử lý lỗi toàn cục: Sử dụng middleware để bắt các lỗi không được xử lý.",
+            "Xử lý lỗi trong controller: Sử dụng try-catch hoặc các promise.",
+            "Custom error: Tạo các loại lỗi tùy chỉnh để xử lý các trường hợp đặc biệt.",
+        ],
+    },
 ];
 
 export const dataInterviewOther: IDataStatic[] = [
