@@ -45,7 +45,7 @@ const list = [
 ];
 
 export function InterviewHTMLCSS() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
     const data1: IDataStatic = takeData("heading1", dataInterviewHTMLCSS);
     const data2: IDataStatic = takeData("heading2", dataInterviewHTMLCSS);
     const data3: IDataStatic = takeData("heading3", dataInterviewHTMLCSS);

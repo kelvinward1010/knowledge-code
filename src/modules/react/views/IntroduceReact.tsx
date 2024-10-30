@@ -29,7 +29,7 @@ const list = [
 ];
 
 export function IntroduceReact() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
     const data1: IDataStatic = takeData("heading1", dataReactIntroduce);
     const data2: IDataStatic = takeData("heading2", dataReactIntroduce);
     const data3: IDataStatic = takeData("heading3", dataReactIntroduce);

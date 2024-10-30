@@ -66,7 +66,7 @@ const list = [
 ];
 
 export function InterviewNodeJS() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
     const data1: IDataStatic = takeData("heading1", dataInterviewNodejs);
     const data2: IDataStatic = takeData("heading2", dataInterviewNodejs);
     const data3: IDataStatic = takeData("heading3", dataInterviewNodejs);

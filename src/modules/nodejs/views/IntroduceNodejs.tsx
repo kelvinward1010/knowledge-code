@@ -17,7 +17,7 @@ const list = [
 ];
 
 export function IntroduceNodejs() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
     const data1: IDataStatic = takeData("heading1", dataNodeJS);
 
     return (

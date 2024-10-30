@@ -6,6 +6,10 @@ import { IDataStatic } from "@/types/data";
 import { takeData } from "@/utils/data";
 import TextConfig from "@/components/textconfig/TextConfig";
 import { useFollowWidth } from "@/hooks/useFollowWidth";
+import {
+    CompareEffectLayoutEffect,
+    CompareStateRef,
+} from "@/assets/images/interviews";
 
 const { Title } = Typography;
 
@@ -90,10 +94,26 @@ const list = [
         key: "heading20",
         lable: "20. Key là gì khi hiển thị một danh sách và mục tiêu của nó là gì?",
     },
+    {
+        key: "heading21",
+        lable: "21. Context API trong React",
+    },
+    {
+        key: "heading22",
+        lable: "22. Các kỹ thuật tối ưu hóa hiệu năng trong React",
+    },
+    {
+        key: "heading23",
+        lable: "23. So sánh useState và useRef trong React",
+    },
+    {
+        key: "heading24",
+        lable: "24. So sánh useEffect và useLayoutEffect trong React",
+    },
 ];
 
 export function InterviewReact() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
 
     const data1: IDataStatic = takeData("heading1", dataReact);
     const data2: IDataStatic = takeData("heading2", dataReact);
@@ -115,6 +135,10 @@ export function InterviewReact() {
     const data18: IDataStatic = takeData("heading18", dataReact);
     const data19: IDataStatic = takeData("heading19", dataReact);
     const data20: IDataStatic = takeData("heading20", dataReact);
+    const data21: IDataStatic = takeData("heading21", dataReact);
+    const data22: IDataStatic = takeData("heading22", dataReact);
+    const data23: IDataStatic = takeData("heading23", dataReact);
+    const data24: IDataStatic = takeData("heading24", dataReact);
 
     return (
         <div className={styles.container}>
@@ -275,6 +299,117 @@ export function InterviewReact() {
                     </Title>
                     <TextConfig textdata={data20.data[0]} />
                     <TextConfig textdata={data20.data[1]} />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading21">
+                        {list[20].lable}
+                    </Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data21.data[0]}
+                    />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data21.data[1]}
+                    />
+                    <TextConfig textdata={data21.data[2]} />
+                    <TextConfig textdata={data21.data[3]} />
+                    <TextConfig textdata={data21.data[4]} />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data21.data[5]}
+                    />
+                    <TextConfig textdata={data21.data[6]} />
+                    <TextConfig textdata={data21.data[7]} />
+                    <TextConfig textdata={data21.data[8]} />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading22">
+                        {list[21].lable}
+                    </Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data22.data[0]}
+                    />
+                    <TextConfig textdata={data22.data[1]} />
+                    <TextConfig textdata={data22.data[2]} />
+                    <TextConfig textdata={data22.data[3]} />
+                    <TextConfig textdata={data22.data[4]} />
+                    <TextConfig textdata={data22.data[5]} />
+                    <TextConfig textdata={data22.data[6]} />
+                    <TextConfig textdata={data22.data[7]} />
+                    <TextConfig textdata={data22.data[8]} />
+                    <TextConfig textdata={data22.data[9]} />
+                    <TextConfig textdata={data22.data[10]} />
+                    <TextConfig textdata={data22.data[11]} />
+                    <TextConfig textdata={data22.data[12]} />
+                    <TextConfig textdata={data22.data[13]} />
+                    <TextConfig textdata={data22.data[14]} />
+                    <TextConfig textdata={data22.data[15]} />
+                    <TextConfig textdata={data22.data[16]} />
+                    <TextConfig textdata={data22.data[17]} />
+                    <TextConfig textdata={data22.data[18]} />
+                    <TextConfig textdata={data22.data[19]} />
+                    <TextConfig textdata={data22.data[20]} />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading23">
+                        {list[22].lable}
+                    </Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data23.data[0]}
+                    />
+                    <TextConfig textdata={data23.data[1]} />
+                    <TextConfig textdata={data23.data[2]} />
+                    <TextConfig textdata={data23.data[3]} />
+                    <TextConfig textdata={data23.data[4]} />
+                    <TextConfig textdata={data23.data[5]} />
+                    <TextConfig textdata={data23.data[6]} />
+                    <TextConfig textdata={data23.data[7]} />
+                    <TextConfig textdata={data23.data[8]} />
+                    <TextConfig textdata={data23.data[9]} />
+                    <TextConfig textdata={data23.data[10]} />
+                    <TextConfig textdata={data23.data[11]} />
+                    <TextConfig textdata={data23.data[12]} />
+                    <TextConfig textdata={data23.data[13]} />
+                    <TextConfig textdata={data23.data[14]} />
+                    <TextConfig textdata={data23.data[15]} />
+                    <TextConfig textdata={data23.data[16]} />
+                    <TextConfig textdata={data23.data[17]} />
+                    <TextConfig textdata={data23.data[18]} />
+                    <TextConfig textdata={data23.data[19]} />
+                    <TextConfig textdata={data23.data[20]} />
+                    <TextConfig textdata={data23.data[21]} />
+                    <img src={CompareStateRef} alt="" />
+                </div>
+                <div className={styles.box}>
+                    <Title level={5} id="heading24">
+                        {list[23].lable}
+                    </Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data24.data[0]}
+                    />
+                    <TextConfig textdata={data24.data[1]} />
+                    <TextConfig textdata={data24.data[2]} />
+                    <TextConfig textdata={data24.data[3]} />
+                    <TextConfig textdata={data24.data[4]} />
+                    <TextConfig textdata={data24.data[5]} />
+                    <TextConfig textdata={data24.data[6]} />
+                    <TextConfig textdata={data24.data[7]} />
+                    <TextConfig textdata={data24.data[8]} />
+                    <TextConfig textdata={data24.data[9]} />
+                    <TextConfig textdata={data24.data[10]} />
+                    <TextConfig textdata={data24.data[11]} />
+                    <TextConfig textdata={data24.data[12]} />
+                    <TextConfig textdata={data24.data[13]} />
+                    <TextConfig textdata={data24.data[14]} />
+                    <TextConfig textdata={data24.data[15]} />
+                    <TextConfig textdata={data24.data[16]} />
+                    <TextConfig textdata={data24.data[17]} />
+                    <TextConfig textdata={data24.data[18]} />
+                    <img src={CompareEffectLayoutEffect} alt="" />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}

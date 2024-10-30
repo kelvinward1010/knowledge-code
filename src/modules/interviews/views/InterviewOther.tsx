@@ -21,7 +21,7 @@ const list = [
 ];
 
 export function InterviewOther() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
     const data1: IDataStatic = takeData("heading1", dataInterviewOther);
     const data3: IDataStatic = takeData("heading2", dataInterviewOther);
 

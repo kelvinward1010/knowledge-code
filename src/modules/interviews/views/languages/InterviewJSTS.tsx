@@ -69,7 +69,7 @@ const list: { key: string; lable: string }[] = [
 ];
 
 export function InterviewJSTS() {
-    const { isBigger, isSmaller } = useFollowWidth(768);
+    const { isBigger, isSmaller } = useFollowWidth(1024);
     const data1: IDataStatic = takeData("heading1", dataInterviewJSTS);
     const data2: IDataStatic = takeData("heading2", dataInterviewJSTS);
     const data3: IDataStatic = takeData("heading3", dataInterviewJSTS);
