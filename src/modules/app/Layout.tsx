@@ -96,7 +96,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
             avatarProps={{
                 src: "https://gw.alipayobjects.com/zos/antfincdn/efFD%24IOql2/weixintupian_20170331104822.jpg",
                 size: "small",
-                title: "Kelvin - Tyker",
+                title: "KW|TL",
                 render: (_, dom) => {
                     return (
                         <Dropdown
