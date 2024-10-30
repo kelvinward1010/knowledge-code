@@ -62,6 +62,10 @@ const list: { key: string; lable: string }[] = [
         key: "heading12",
         lable: "12. Prototype và Prototype Chain trong JavaScript",
     },
+    {
+        key: "heading13",
+        lable: "13. Sự Khác Biệt Giữa Interface và Type trong TypeScript",
+    },
 ];
 
 export function InterviewJSTS() {
@@ -78,6 +82,7 @@ export function InterviewJSTS() {
     const data10: IDataStatic = takeData("heading10", dataInterviewJSTS);
     const data11: IDataStatic = takeData("heading11", dataInterviewJSTS);
     const data12: IDataStatic = takeData("heading12", dataInterviewJSTS);
+    const data13: IDataStatic = takeData("heading13", dataInterviewJSTS);
 
     return (
         <div className={styles.container}>
@@ -245,6 +250,43 @@ export function InterviewJSTS() {
                     <TextConfig textdata={data12.data[8]} />
                     <TextConfig textdata={data12.data[9]} />
                     <TextConfig textdata={data12.data[10]} />
+                </div>
+                <div className={styles.box} id="heading13">
+                    <Title level={5}>{list[12].lable}</Title>
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data13.data[0]}
+                    />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data13.data[1]}
+                    />
+                    <TextConfig textdata={data13.data[2]} />
+                    <TextConfig textdata={data13.data[3]} />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data13.data[4]}
+                    />
+                    <TextConfig textdata={data13.data[5]} />
+                    <TextConfig textdata={data13.data[6]} />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data13.data[7]}
+                    />
+                    <TextConfig textdata={data13.data[8]} />
+                    <TextConfig textdata={data13.data[9]} />
+                    <TextConfig textdata={data13.data[10]} />
+                    <TextConfig textdata={data13.data[11]} />
+                    <TextConfig textdata={data13.data[12]} />
+                    <TextConfig textdata={data13.data[13]} />
+                    <TextConfig textdata={data13.data[14]} />
+                    <TextConfig textdata={data13.data[15]} />
+                    <TextConfig
+                        classNameText="text-title"
+                        textdata={data13.data[16]}
+                    />
+                    <TextConfig textdata={data13.data[17]} />
+                    <TextConfig textdata={data13.data[18]} />
                 </div>
             </div>
             {isBigger && <QuickLinks list={list} />}

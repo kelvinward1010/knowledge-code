@@ -489,11 +489,59 @@ export const dataInterviewJSTS: IDataStatic[] = [
             "- Và cứ thế cho đến khi tìm thấy hoặc đến cuối chuỗi.",
         ],
     },
+    {
+        key: "heading13",
+        data: [
+            "Interface và Type trong TypeScript đều được sử dụng để định nghĩa kiểu dữ liệu, nhưng chúng có những đặc điểm và cách sử dụng khác nhau. Để hiểu rõ hơn về sự khác biệt giữa hai khái niệm này, hãy cùng phân tích từng điểm:",
+            "1. Mục đích:",
+            "- Interface: Chủ yếu được sử dụng để định nghĩa hợp đồng (contract) cho các đối tượng. Nó mô tả hình dạng của một đối tượng, bao gồm các thuộc tính và phương thức mà đối tượng đó cần có.",
+            "- Type: Linh hoạt hơn, có thể được sử dụng để đặt tên cho bất kỳ loại kiểu dữ liệu nào, bao gồm các kiểu nguyên thủy, union type, intersection type, literal types, và thậm chí cả các hàm.",
+            "2. Khả năng mở rộng:",
+            "- Interface: Hỗ trợ merged declarations. Điều này có nghĩa là bạn có thể khai báo nhiều interface cùng tên và chúng sẽ được hợp nhất lại thành một interface duy nhất.",
+            "- Type: Không hỗ trợ merged declarations.",
+            "3. Tính năng đặc biệt:",
+            "Interface:",
+            "- Hỗ trợ computed properties. Tuy nhiên, tên của computed property phải là một literal type hoặc một unique symbol type.",
+            "- Hỗ trợ index signatures.",
+            "- Có thể mô tả một function (callable).",
+            "Type:",
+            "- Hỗ trợ union types và intersection types.",
+            "- Hỗ trợ tuple types.",
+            "- Có thể sử dụng với computed properties một cách linh hoạt hơn.",
+            "4. Cách sử dụng:",
+            "- Interface: Thường được sử dụng để định nghĩa kiểu cho các đối tượng, đặc biệt là khi bạn muốn tạo ra một hợp đồng rõ ràng giữa các phần khác nhau của code.",
+            "- Type: Được sử dụng linh hoạt hơn, có thể dùng để định nghĩa các kiểu dữ liệu phức tạp, các kiểu hàm, hoặc đơn giản chỉ để đặt tên cho một kiểu dữ liệu cụ thể.",
+        ],
+    },
 ];
 
 export const dataInterviewHTMLCSS: IDataStatic[] = [
     {
         key: "heading1",
+        data: [
+            "HTML (HyperText Markup Language) là ngôn ngữ đánh dấu dùng để tạo cấu trúc cho trang web.",
+            "CSS (Cascading Style Sheets) là ngôn ngữ dùng để định dạng các phần tử HTML, giúp trang web trở nên đẹp mắt và chuyên nghiệp hơn.",
+        ],
+    },
+    {
+        key: "heading2",
+        data: [
+            "<html>, <head>, <body> là ba thẻ chính.",
+            "<head> chứa thông tin về trang web (tiêu đề, charset,...)",
+            "<body> chứa nội dung chính của trang.",
+        ],
+    },
+    {
+        key: "heading3",
+        data: [
+            "Selector theo ID: #id",
+            "Selector theo class: .class",
+            "Selector theo thẻ: thẻ",
+            "Selector theo thuộc tính: thẻ[thuộc tính='giá trị']",
+        ],
+    },
+    {
+        key: "heading4",
         data: [
             "CSS Box Model là một mô hình cơ bản dùng để xác định kích thước và vị trí của các phần tử trên trang web. Mỗi phần tử HTML được coi như một hộp (box), và hộp này bao gồm các phần sau:",
             "- Content: Nội dung bên trong hộp (text, hình ảnh, ...)",
@@ -503,7 +551,7 @@ export const dataInterviewHTMLCSS: IDataStatic[] = [
         ],
     },
     {
-        key: "heading2",
+        key: "heading5",
         data: [
             "Flexbox và Grid layout là hai công cụ mạnh mẽ để tạo ra các bố cục phức tạp và linh hoạt trên trang web. Chúng cho phép bạn sắp xếp các phần tử theo nhiều cách khác nhau, đáp ứng được các thiết bị có kích thước màn hình khác nhau.",
             "Flexbox",
@@ -525,7 +573,7 @@ export const dataInterviewHTMLCSS: IDataStatic[] = [
         ],
     },
     {
-        key: "heading3",
+        key: "heading6",
         data: [
             "HTML Semantic Elements (các phần tử ngữ nghĩa HTML) là những phần tử HTML được thiết kế để mang ý nghĩa đặc biệt, mô tả rõ ràng về mục đích của chúng trong một trang web. Thay vì chỉ đơn thuần tạo ra các khối nội dung bằng các phần tử chung chung như <div> và <span>, các phần tử ngữ nghĩa giúp chúng ta xây dựng một cấu trúc HTML có ý nghĩa hơn, dễ hiểu hơn cho cả trình duyệt, công cụ tìm kiếm và các nhà phát triển khác.",
             "Ví dụ về các phần tử ngữ nghĩa:",
@@ -542,6 +590,37 @@ export const dataInterviewHTMLCSS: IDataStatic[] = [
             "3. Tạo ra các trang web tiếp cận được tốt hơn",
             "4. Dễ dàng bảo trì và mở rộng",
             "5. Tạo ra các ứng dụng web hiện đại",
+        ],
+    },
+    {
+        key: "heading7",
+        data: [
+            "Inline:",
+            "- Các phần tử inline không tự động xuống dòng, mà nằm sát nhau theo chiều ngang.",
+            "- Chiều rộng và chiều cao không thể điều chỉnh được bằng CSS.",
+            "- Ví dụ: <span>, <a>, <img> (khi không có thuộc tính width và height)",
+            "Block:",
+            "- Các phần tử block luôn chiếm trọn một dòng.",
+            "- Chiều rộng và chiều cao có thể điều chỉnh được.",
+            "- Ví dụ: <div>, <p>, <h1>, <ul>, <ol>",
+            "Inline-block:",
+            "- Là sự kết hợp của inline và block.",
+            "- Phần tử có thể nằm cạnh nhau như inline nhưng vẫn có thể đặt chiều rộng, chiều cao.",
+            "- Thường được sử dụng để tạo các button tùy chỉnh.",
+        ],
+    },
+    {
+        key: "heading8",
+        data: [
+            "static: (mặc định)",
+            "- Phần tử được đặt tại vị trí tự nhiên của nó trong dòng.",
+            "relative:",
+            "- Vị trí của phần tử được tính tương đối so với vị trí ban đầu của nó.",
+            "- Sử dụng các thuộc tính top, bottom, left, right để di chuyển.",
+            "absolute:",
+            "- Phần tử được lấy ra khỏi dòng và vị trí của nó được tính tương đối so với phần tử cha có thuộc tính position khác static.",
+            "fixed:",
+            "- Phần tử được cố định trên màn hình và không cuộn theo khi bạn cuộn trang.",
         ],
     },
 ];

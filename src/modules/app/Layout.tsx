@@ -38,7 +38,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
 
     const defaultFooterDom = (
         <DefaultFooter
-            copyright={`${new Date().getFullYear()} Kelvin Ward`}
+            copyright={`${new Date().getFullYear()} Kelvin Ward | Tyler Locke`}
             links={[
                 {
                     key: "Ant Design Pro",
@@ -96,7 +96,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
             avatarProps={{
                 src: "https://gw.alipayobjects.com/zos/antfincdn/efFD%24IOql2/weixintupian_20170331104822.jpg",
                 size: "small",
-                title: "Kaito Kid",
+                title: "Kelvin - Tyker",
                 render: (_, dom) => {
                     return (
                         <Dropdown
