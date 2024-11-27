@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import styles from "./IntroduceReact.module.scss";
+import styles from "./style.module.scss";
 import { useFollowWidth } from "@/hooks/useFollowWidth";
 import { dataReactIntroduce } from "../data";
 import { takeData } from "@/utils/data";

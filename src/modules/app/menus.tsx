@@ -1,4 +1,5 @@
 import {
+    RemixReactUrl,
     cicdUrl,
     cicdprojectUrl,
     devtoolsUrl,
@@ -87,6 +88,10 @@ export const defaultMenus = [
             {
                 path: hooksReactUrl,
                 name: "Hooks React",
+            },
+            {
+                path: RemixReactUrl,
+                name: "Remix React",
             },
         ],
     },

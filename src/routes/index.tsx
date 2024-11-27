@@ -12,6 +12,7 @@ import {
     introduceReactUrl,
     layoutUrl,
     prettierhuskylintstagedUrl,
+    RemixReactUrl,
     signinUrl,
 } from "./urls";
 import { ErrorBoundaryPage } from "@/components/error/boundary-error";
@@ -29,6 +30,7 @@ import {
     IntroduceReact,
     Layout,
     PrettierHuskyLintStaged,
+    RemixReact,
 } from "@/modules";
 
 interface RouteProps {
@@ -63,6 +65,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: introduceReactUrl,
                 element: <IntroduceReact />,
+            },
+            {
+                path: RemixReactUrl,
+                element: <RemixReact />,
             },
             {
                 path: hooksReactUrl,

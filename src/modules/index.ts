@@ -45,6 +45,11 @@ export const IntroduceReact = lazyLoad(
     (module) => module.IntroduceReact,
 );
 
+export const RemixReact = lazyLoad(
+    () => import("./react/views/RemixReact"),
+    (module) => module.RemixReact,
+);
+
 export const HooksReact = lazyLoad(
     () => import("./react/views/HooksReact"),
     (module) => module.HooksReact,

@@ -33,3 +33,34 @@ export const dataReactIntroduce: IDataStatic[] = [
         ],
     },
 ];
+
+export const dataReactRemix: IDataStatic[] = [
+    {
+        key: "heading1",
+        data: [
+            "React Remix (thường gọi là Remix) là một framework dựa trên React nhằm mục đích xây dựng các ứng dụng web hiện đại với hiệu suất cao và trải nghiệm người dùng tốt. Remix được thiết kế để giúp các nhà phát triển tận dụng tối đa khả năng của React, đồng thời cung cấp các công cụ và chức năng tiên tiến để quản lý routing, dữ liệu, và hiệu năng.",
+            "Các tính năng chính của Remix",
+            "1. Routing:",
+            "- Remix sử dụng một hệ thống routing mạnh mẽ và linh hoạt, cho phép bạn định nghĩa các route một cách dễ dàng.",
+            "- Các route có thể được chia nhỏ thành các file riêng biệt, giúp dễ quản lý và bảo trì.",
+            "2. Data Loading:",
+            "- Remix cung cấp các công cụ để tải dữ liệu một cách hiệu quả từ phía server.",
+            "- Các loader được sử dụng để lấy dữ liệu trước khi render, đảm bảo trang web luôn hiển thị dữ liệu mới nhất.",
+            "3. Actions:",
+            "- Remix hỗ trợ việc xử lý các hành động như form submission thông qua các action.",
+            "- Các action cho phép xử lý dữ liệu từ phía server và thực hiện các thao tác CRUD một cách hiệu quả.",
+            "4. Rendering:",
+            "- Remix hỗ trợ cả Server-Side Rendering (SSR) và Static-Site Generation (SSG), cho phép bạn tối ưu hóa hiệu suất và SEO.",
+            "- Bạn có thể lựa chọn phương thức render phù hợp với nhu cầu của dự án.",
+            "5. Error Handling:",
+            "- Remix cung cấp cơ chế xử lý lỗi mạnh mẽ, giúp bạn quản lý và hiển thị các thông báo lỗi một cách dễ dàng.",
+            "6. Nested Routes:",
+            "- Remix hỗ trợ các route lồng nhau, cho phép bạn tạo các cấu trúc route phức tạp và tái sử dụng các thành phần một cách linh hoạt.",
+            "Lợi ích của việc sử dụng Remix",
+            "- Hiệu năng cao: Remix tối ưu hóa quá trình tải dữ liệu và render, giúp ứng dụng của bạn nhanh hơn và phản hồi tốt hơn.",
+            "- Trải nghiệm người dùng tốt: Bằng cách tải dữ liệu trước khi render, Remix giúp giảm thời gian chờ đợi và mang lại trải nghiệm người dùng mượt mà hơn.",
+            "- SEO Tốt hơn: Với SSR và SSG, Remix giúp cải thiện khả năng SEO của trang web, đảm bảo rằng các công cụ tìm kiếm có thể lập chỉ mục nội dung của bạn một cách hiệu quả.",
+            "- Phát triển nhanh chóng: Remix cung cấp nhiều công cụ và thư viện hỗ trợ, giúp các nhà phát triển xây dựng và triển khai ứng dụng nhanh chóng và dễ dàng.",
+        ],
+    },
+];

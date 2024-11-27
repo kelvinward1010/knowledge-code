@@ -16,6 +16,7 @@ export const interviewsHTMLCSSUrl = `${interviewsUrl}/html-css`;
 export const reactUrl = "/react";
 export const introduceReactUrl = `${reactUrl}/introduce`;
 export const hooksReactUrl = `${reactUrl}/hooks`;
+export const RemixReactUrl = `${reactUrl}/react-remix`;
 
 export const nodejsUrl = "/nodejs";
 export const introduceNodejsUrl = `${nodejsUrl}/introduce`;
